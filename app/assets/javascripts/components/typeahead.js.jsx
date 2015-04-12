@@ -21,7 +21,7 @@ var Typeahead = React.createClass({
           />
         </div>
         <button type="button"
-                className={"btn btn-default btn-" + this.size() + ' ' + this.active()}
+                className={"button button-default " + this.size() + "-button " + this.active()}
                 onClick={this.handleClick}>
           {this.props.prompt}
         </button>
@@ -41,7 +41,7 @@ var Typeahead = React.createClass({
   },
 
   active: function() {
-    return this.state.inputValue.length >= 2 ? '' : 'disabled';
+    return this.state.inputValue.length >= 2 ? '' : 'button-disabled';
   },
 
   componentDidMount: function() {

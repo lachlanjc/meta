@@ -34,13 +34,13 @@
     render: function() {
       return <div>
         <div className="clearfix gray-2 text-small row">
-          <span className="col-md-6">Simple</span>
-          <span className="col-md-6 right-align">Complex</span>
+          <span className="md-col-6">Simple</span>
+          <span className="md-col-6 right-align">Complex</span>
         </div>
         <input type="range" min="0" max="100" onChange={this.handleOfferChanged} defaultValue={initialVal} />
         <div className="row">
 
-          <span className="right-align text-small col-md-12">
+          <span className="right-align text-small md-col-12">
             <span className="yellow text-small" style={{"margin-right": "5px"}}>
               <span className="icon icon-app-coin"></span>
               {numeral(this.props.newOffer).format('0,0')}

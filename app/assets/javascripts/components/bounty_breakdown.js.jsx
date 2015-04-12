@@ -67,7 +67,7 @@
           {numeral(this.state.offer).format('0,0')}
         </div>
 
-        <button className="btn btn-primary right px4" name="button" type="submit" onClick={this.handleOfferClicked}>Save</button>
+        <button className="button button-primary right px4" name="button" type="submit" onClick={this.handleOfferClicked}>Save</button>
       </div>
     },
 

@@ -2,8 +2,8 @@
 
 <br>
 
-<h6 class="omega gray-2">Nice work!</h6>
-<h1 class="alpha green">You're almost there</h1>
+<h6 class="mb0 gray-2">Nice work!</h6>
+<h1 class="mt0 green">You're almost there</h1>
 <p class="lead gray-2">
   <strong><%= @product.name %></strong> is currently <strong>stealth</strong>, meaning it is only visible to people you share it with. Before you can start publicly building a team, you need to fill in some more details and submit your product for approval.
 </p>
@@ -14,9 +14,9 @@
 <br>
 
 <div class="row">
-  <div class="col-md-4">
-    <h6 class="gray-2 omega">Step 1</h6>
-    <h2 class="alpha">Define some work</h2>
+  <div class="md-col-4">
+    <h6 class="gray-2 mb0">Step 1</h6>
+    <h2 class="mt0">Define some work</h2>
     <p>
       Bounties are how other people can get involved in your product. A great bounty clearly defines a goal and gives someone all the information they need to reach it.
     </p>
@@ -26,7 +26,7 @@
 
     <% if @product.tasks.count < 3 %>
       <div data-react-class="CreateBountyButton" data-react-props="<%= {
-        classes: 'btn btn-success btn-block',
+        classes: 'button button-primary button-block',
         product: { name: @product.name },
         url: product_wips_path(@product),
         maxOffer: (6 * @product.average_bounty).round(-4),
@@ -37,7 +37,7 @@
         label: 'Create ' + pluralize(3 - @product.tasks.count, 'more bounty', 'more bounties')
       }.to_json %>"></div>
     <% else %>
-      <div class="btn btn-default btn-block disabled">
+      <div class="button button-default button-block disabled">
         <span class="green">
           <span class="glyphicon glyphicon-ok-sign"></span>
           Done!
@@ -52,16 +52,16 @@
     </p>
   </div>
 
-  <div class="col-md-4">
-    <h6 class="gray-2 omega">Step 2</h6>
-    <h2 class="alpha">Share your progress</h2>
+  <div class="md-col-4">
+    <h6 class="gray-2 mb0">Step 2</h6>
+    <h2 class="mt0">Share your progress</h2>
     <p>Everybody is curious to see the progress of your product. Write updates to keep them in the loop with the product's progress. People love updates that are fun, short and have engaging visuals.</p>
     <p>Stuck for ideas? Introduce your product up to this point in a more personal way. Tell everybody <em>your</em> story.</p>
 
     <% if @product.posts.empty? %>
-      <a class="btn btn-success btn-block" href="<%= new_product_post_path(@product) %>">Write an update</a>
+      <a class="button button-primary button-block" href="<%= new_product_post_path(@product) %>">Write an update</a>
     <% else %>
-      <div class="btn btn-default btn-block disabled">
+      <div class="button button-default button-block disabled">
         <span class="green">
           <span class="glyphicon glyphicon-ok-sign"></span>
           Done!
@@ -76,9 +76,9 @@
     </p>
   </div>
 
-  <div class="col-md-4">
-    <h6 class="gray-2 omega">Step 3</h6>
-    <h2 class="alpha">Start building</h2>
+  <div class="md-col-4">
+    <h6 class="gray-2 mb0">Step 3</h6>
+    <h2 class="mt0">Start building</h2>
     <p>
       People are much more likely to be excited about your product when they can see some evidence of progress. Create a repository so the design and development of your product can start.
     </p>
@@ -88,11 +88,11 @@
     </p>
 
     <% if @product.repos.empty? %>
-      <a class="btn btn-success btn-block" href="<%= product_repos_path(@product) %>">
+      <a class="button button-primary button-block" href="<%= product_repos_path(@product) %>">
         Create a repository
       </a>
     <% else %>
-      <a class="btn btn-default btn-block disabled" href="#">
+      <a class="button button-default button-block disabled" href="#">
         <span class="green">
           <span class="glyphicon glyphicon-ok-sign"></span>
           Done!
@@ -113,11 +113,11 @@
 
 <br>
 
-<h6 class="gray-2 omega">Final Step</h6>
-<h2 class="alpha">Submitting for approval</h2>
+<h6 class="gray-2 mb0">Final Step</h6>
+<h2 class="mt0">Submitting for approval</h2>
 
 <div class="row">
-  <div class="col-md-6">
+  <div class="md-col-6">
     <p class="lead">
       We value the time of our community so we like to do a quick check through of your product before we show it to the Assembly community. This process typically takes a few days and we aim to be in constant communication throughout.
     </p>
@@ -126,16 +126,16 @@
     </p>
   </div>
 
-  <div class="col-md-5 col-md-offset-1">
+  <div class="md-col-5 col-md-offset-1">
 
     <div class="row">
-      <div class="col-md-4">
+      <div class="md-col-4">
         <a href="<%= user_path('awwstn') %>">
           <%= avatar_tag(User.find_by_username!('awwstn'), 120) %>
         </a>
       </div>
 
-      <div class="col-md-8">
+      <div class="md-col-8">
         <p class="text-large">
           <a href="<%= user_path('awwstn') %>">awwstn</a> will be reviewing your product.
         </p>
@@ -148,8 +148,8 @@
     <hr class="border-bottom">
 
     <div class="row">
-      <div class="col-md-6">
-        <h6 class="alpha omega">We <span class="green">like</span></h6>
+      <div class="md-col-6">
+        <h6 class="mt0 mb0">We <span class="green">like</span></h6>
         <ul class="list-reset gray-2 small">
           <li>Interesting new ideas</li>
           <li>Spelling &amp; grammar</li>
@@ -157,8 +157,8 @@
           <li>Achieveable products</li>
         </ul>
       </div>
-      <div class="col-md-6">
-        <h6 class="alpha omega">We <span class="red">dislike</span></h6>
+      <div class="md-col-6">
+        <h6 class="mt0 mb0">We <span class="red">dislike</span></h6>
         <ul class="list-reset gray-2 small">
           <li>People looking for free work</li>
           <li>Jerks</li>
@@ -173,10 +173,10 @@
 <br>
 
 <% if !@product.finished_first_steps? %>
-  <a class="btn btn-lg btn-default disabled" href="#">Submit for approval</a>
+  <a class="button lg-button button-default disabled" href="#">Submit for approval</a>
   <br>
   <br>
   <p class="yellow">(You need to complete the 3 steps above before you can submit your product for approval)</a>
 <% else %>
-  <%= button_to 'Submit for approval', product_launch_path(@product), class: 'btn btn-lg btn-success', method: 'patch' %>
+  <%= button_to 'Submit for approval', product_launch_path(@product), class: 'button lg-button button-primary', method: 'patch' %>
 <% end %>

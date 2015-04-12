@@ -38,7 +38,7 @@ var ShowcaseBanner = React.createClass({
     }
 
     return (
-      <div className="bg-white py4 border-bottom overflow-hidden hidden-xs" data-dismissible="showcase">
+      <div className="bg-white py4 border-bottom overflow-hidden sm-hide" data-dismissible="showcase">
         <div className="container relative">
           <div className="clearfix">
             <div className="sm-col sm-col-12">

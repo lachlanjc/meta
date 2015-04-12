@@ -107,18 +107,6 @@ $user-davidkaneda: #848C24;
   .gray-2 { color: $link-color; }
 }
 
-.alpha {
-  margin-top: 0 !important;
-}
-
-.omega {
-  margin-bottom: 0 !important;
-}
-
-.neuter-paragraphs > p:last-child {
-  @extend .omega;
-}
-
 .fb-like {
   top: -7px;
 }

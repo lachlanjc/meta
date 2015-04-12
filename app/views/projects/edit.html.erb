@@ -7,7 +7,7 @@
 
 <div class="sheet-body">
   <div class="row">
-    <div class="col-md-9">
+    <div class="md-col-9">
       <%= form_for @wip, url: product_project_path(@product, @wip) do |f| %>
 
         <div class="form-group">
@@ -32,14 +32,14 @@
         <%= render partial: 'task_list', object: @milestone %>
 
         <div class="form-actions">
-          <button class="btn btn-primary" data-disable-with="Saving...">
+          <button class="button button-primary" data-disable-with="Saving...">
             Save Project
           </button>
         </div>
       <% end %>
     </div>
 
-    <div class="col-md-3">
+    <div class="md-col-3">
       <%= render 'help_module' %>
     </div>
   </div>

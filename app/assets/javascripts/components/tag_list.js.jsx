@@ -113,7 +113,7 @@ var TagList = React.createClass({
             <a
                 href="javascript:"
                 onClick={this.togglePopover}
-                className="btn btn-link btn-sm">
+                className="button button-default sm-button">
               {this.tagPopoverText()}
             </a>
           </BsPopover>

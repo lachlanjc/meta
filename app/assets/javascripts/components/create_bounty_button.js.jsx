@@ -41,7 +41,7 @@
     getDefaultProps: function() {
       return {
         label: 'Create a bounty',
-        classes: 'btn btn-default btn-sm'
+        classes: 'button button-default sm-button'
       }
     },
 

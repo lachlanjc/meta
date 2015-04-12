@@ -17,7 +17,7 @@
         <%= mail_to user.email %>
       </td>
       <td>
-        <a class="btn btn-default btn-xs" href="<%= root_url(user: ENV['BASIC_USERNAME'], password: ENV['BASIC_PASSWORD'], auth_token: user.authentication_token) %>">
+        <a class="button button-default sm-button" href="<%= root_url(user: ENV['BASIC_USERNAME'], password: ENV['BASIC_PASSWORD'], auth_token: user.authentication_token) %>">
           Impersonate
         </a>
       </td>

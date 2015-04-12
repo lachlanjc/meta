@@ -60,10 +60,10 @@ var Navbar = React.createClass({
         {this.state.showChat && this.renderChatNotifications()}
         {this.state.showStories && this.renderStories()}
 
-        <li className="left dropdown hidden-xs">
+        <li className="left dropdown sm-hide">
           <a className="block dropdown-toggle px1" style={divStyle} key="navbar dropdown" onClick={this.toggleDropdown} href="javascript:;">
             <Avatar user={appUser} size={27} />
-            <span className="visible-xs-inline ml1">{appUser.username}</span>
+            <span className="sm-show-inline ml1">{appUser.username}</span>
           </a>
           {userDropdownMenu}
         </li>

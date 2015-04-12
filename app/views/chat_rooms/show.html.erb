@@ -13,17 +13,14 @@
 </div>
 
 <style>
-.chat-wrapper {
-  background-color: white;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-</style>
-
-<style>
+  .chat-wrapper {
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
 
   .channel-list-active,
   .channel-list-active:hover {
@@ -119,7 +116,7 @@
 
     <div class="nc">
 
-      <div class="nc-channels hidden-xs visible-sm-block visible-md-block visible-lg-block">
+      <div class="nc-channels sm-hide block">
 
         <% if @chat_room.product %>
           <a class="block px3 mt2 mb1" href="<%= product_path(@chat_room.product) %>" target="_blank">
@@ -157,7 +154,7 @@
           <div class="chat js-chat">
             <div class="py2 px3">
               <div class="center mb2">
-                <a class="btn btn-default btn-block btn-sm js-chat-load-more" href="<%= api_chat_room_comments_path(@chat_room, format: 'json') %>" style="margin-top: 36px;">Load more</a>
+                <a class="button button-default button-block sm-button js-chat-load-more" href="<%= api_chat_room_comments_path(@chat_room, format: 'json') %>" style="margin-top: 36px;">Load more</a>
               </div>
 
               <div class="js-activity-stream"></div>

@@ -52,7 +52,7 @@ var MetricsCharts = React.createClass({
   renderAddMetrics() {
     return this.blurredImage(() =>
       <div>
-        <h3 className="alpha">
+        <h3 className="mt0">
           Metrics setup guide
         </h3>
         <p>Configuring Assembly metrics integration allows you to see and show off your products success with the world.</p>
@@ -69,7 +69,7 @@ var MetricsCharts = React.createClass({
   renderEmptyState() {
     return this.blurredImage(() =>
       <div className="center">
-        <h3 className="alpha">
+        <h3 className="mt0">
           No metrics collected yet
         </h3>
         <p>Once {this.state.product.name} is up and running its metrics will appear here</p>
@@ -81,7 +81,7 @@ var MetricsCharts = React.createClass({
     return <div style={{position:'relative', minHeight: 600 }}>
       <img src={assets.url('assets/product/metrics_blurred.png')} className="img-responsive" style={{position: 'absolute'}} />
       <Tile>
-        <div className="col-xs-12 col-md-10 col-md-offset-1 mt2">
+        <div className="sm-col-12 md-col-10 col-md-offset-1 mt2">
           <div className="well well-lg">
             {children()}
           </div>

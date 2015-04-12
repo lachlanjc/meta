@@ -229,7 +229,7 @@ let DashboardIndex = React.createClass({
 
   renderSubmit: function() {
     let selected = this.state.selected
-    let classes = ['pill-button', 'pill-button-theme-white', 'pill-button-border', 'pill-button-shadow', 'bold']
+    var classes = ['button', 'button-default', 'bold']
     let selectionsNeeded = 3 - selected.length
     let progress = null
     let text = null
@@ -259,7 +259,7 @@ let DashboardIndex = React.createClass({
         })
       }.bind(this)
     } else {
-      classes = classes.concat(['gray', 'hover-gray'])
+      classes = ['button', 'button-disabled']
 
       switch(selectionsNeeded) {
         case 1:
@@ -285,7 +285,7 @@ let DashboardIndex = React.createClass({
     }
 
     return (
-      <a onClick={click} className={classes.join(' ')} style={{ display: 'inline-block', lineHeight: '26px', paddingLeft: padding }}>
+      <a onClick={click} className={classes.join(' ') + ' inline-block'} style={{ lineHeight: '26px', paddingLeft: padding }}>
         {progress}
         {text}
       </a>

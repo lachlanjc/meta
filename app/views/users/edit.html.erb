@@ -68,7 +68,7 @@
             </div>
 
             <div class="right-align">
-              <%= f.submit 'Update profile', class: 'btn btn-primary' %>
+              <%= f.submit 'Update profile', class: 'button button-primary' %>
             </div>
           <% end %>
         </div>
@@ -87,7 +87,7 @@
             </div>
 
             <div class="right-align">
-              <%= f.submit 'Update account', class: 'btn btn-primary' %>
+              <%= f.submit 'Update account', class: 'button button-primary' %>
             </div>
           <% end %>
         </div>
@@ -123,7 +123,7 @@
             </div>
 
             <div class="right-align">
-              <%= f.submit 'Update notifications', class: 'btn btn-primary' %>
+              <%= f.submit 'Update notifications', class: 'button button-primary' %>
             </div>
           <% end %>
         </div>
@@ -131,11 +131,11 @@
 
         <div role="tabpanel" class="tab-pane" id="payments">
 
-          <a class="btn btn-default" href="<%= users_payment_option_path %>">
+          <a class="button button-default" href="<%= users_payment_option_path %>">
             Update bank details
           </a>
 
-          <a class="btn btn-default" href="<%= users_tax_info_path %>">
+          <a class="button button-default" href="<%= users_tax_info_path %>">
             Update Tax Info
           </a>
 
@@ -143,7 +143,7 @@
 
           <% if @balance.available_to_payout > 0 %>
           <div class="pull-right">
-            <%= button_to "Withdraw #{currency @balance.available_to_payout}", withdraw_users_balance_path, class: 'btn btn-default' %>
+            <%= button_to "Withdraw #{currency @balance.available_to_payout}", withdraw_users_balance_path, class: 'button button-default' %>
             <% if @balance.available_to_withhold > 0 %>
             <small class="gray-2"><%= currency @balance.available_to_withhold %> will be withheld for US taxes</small>
             <% end %>
@@ -186,7 +186,7 @@
             <div class="py4 clearfix">
               <div class="col-8 mx-auto">
                 <div class="p4 center rounded bg-white">
-                  <p class="gray-2 omega">
+                  <p class="gray-2 mb0">
                     You will earn a balance once you've worked on a profitable product
                   </p>
                 </div>
@@ -210,7 +210,7 @@
             </div>
 
             <div class="right-align">
-              <%= f.submit 'Update beta subscription', class: 'btn btn-primary' %>
+              <%= f.submit 'Update beta subscription', class: 'button button-primary' %>
             </div>
           <% end %>
         </div>

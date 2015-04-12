@@ -7,9 +7,9 @@
     <%= image_tag 'financials-blankslate.png', class: 'img-responsive', style: 'position:absolute' %>
 
     <div class="row">
-      <div class="col-md-8 col-xs-12 col-md-offset-2">
+      <div class="md-col-8 sm-col-12 col-md-offset-2">
         <div class="well well-lg center">
-          <h3 class="alpha">
+          <h3 class="mt0">
             This product hasn't earned any revenue yet.
           </h3>
           <p class="gray-2">
@@ -19,7 +19,7 @@
             royalties as a partner.
           </p>
           <div class="center">
-            <a class="btn btn-primary" href="<%= product_partners_path(@product) %>" style="margin-top:12px;">See who owns <%= @product.name %></a>
+            <a class="button button-primary" href="<%= product_partners_path(@product) %>" style="margin-top:12px;">See who owns <%= @product.name %></a>
           </div>
         </div>
       </div>
@@ -81,7 +81,7 @@
     <div class="pull-right">
       <ul class="list-inline">
         <li>
-          <button class="btn btn-default btn-xs" data-toggle="modal" data-target="#new-expense-modal">
+          <button class="button button-default sm-button" data-toggle="modal" data-target="#new-expense-modal">
             Log expense
           </button>
         </li>

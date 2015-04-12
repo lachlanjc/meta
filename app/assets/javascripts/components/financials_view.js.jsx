@@ -65,7 +65,7 @@
       // TODO: Break out dl-inline styles into reusable SCSS components
       return (
         <div>
-          <ul className="list-inline omega">
+          <ul className="list-inline mb0">
             <li>
               <span className="bg-green"></span>
               <span className="green">Payout</span>
@@ -128,7 +128,7 @@
 
       return (
         <div className="row">
-          <div className="col-sm-2">
+          <div className="sm-col-2">
             {moment(this.state.month).format('MMM YYYY')}
           </div>
           <div className="com-sm-10">

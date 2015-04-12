@@ -107,7 +107,7 @@ let IdeasIndex = React.createClass({
 
   renderProgress() {
     return (
-      <ul className="list list-steps hidden-xs hidden-sm">
+      <ul className="list list-steps sm-hide sm-hide">
         <li className="overlay"></li>
         <li>
           <div className="step active">1</div>

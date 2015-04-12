@@ -90,8 +90,8 @@
             </div>
 
             <div className="modal-footer form-actions">
-              <button type="button" className="btn btn-default" data-dismiss="modal">Cancel</button>
-              <button className="btn btn-primary" name="button" type="submit">Save</button>
+              <button type="button" className="button button-default" data-dismiss="modal">Cancel</button>
+              <button className="button button-primary" name="button" type="submit">Save</button>
             </div>
           </form>
         </Lightbox>

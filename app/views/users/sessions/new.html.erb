@@ -4,12 +4,12 @@
 <div class="bg-white" style="top:0;right:0;bottom:0;left:0;margin:auto;position:absolute">
   <div class="container">
     <div class="row">
-      <div class="col-sm-6 col-sm-offset-3">
+      <div class="sm-col-6 col-sm-offset-3">
 
         <div class="sheet">
           <div class="sheet-body">
             <div class="center">
-              <h1 class="omega">Welcome back to Assembly!</h1>
+              <h1 class="mb0">Welcome back to Assembly!</h1>
               <p class="gray-2">
                 <a href="<%= new_user_registration_path %>">Don't have an account?</a>
               </p>
@@ -31,7 +31,7 @@
                 </div>
               <% end %>
 
-              <a class="button btn-facebook button--block" href="<%= user_omniauth_authorize_path(:facebook) %>">
+              <a class="button button-facebook button-block" href="<%= user_omniauth_authorize_path(:facebook) %>">
                 <span class="fa fa-facebook mr1"></span> Use Facebook
               </a>
 
@@ -52,7 +52,7 @@
                 </div>
               </div>
 
-              <%= f.submit 'Log in', class: 'button button--primary button--block' %>
+              <%= f.submit 'Log in', class: 'button button-primary button-block' %>
 
               <div class="clearfix">
                 <div class="checkbox pull-left">

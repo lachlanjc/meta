@@ -12,7 +12,7 @@ var WelcomeBanner = React.createClass({
 
   render: function() {
     return (
-      <div className="bg-white py4 border-bottom overflow-hidden hidden-xs" data-dismissable="welcome">
+      <div className="bg-white py4 border-bottom overflow-hidden sm-hide" data-dismissable="welcome">
         <div className="container relative">
           <div className="welcome-banner-left absolute"></div>
           <div className="welcome-banner-right absolute"></div>

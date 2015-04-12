@@ -72,9 +72,9 @@ var PostsIndex = React.createClass({
 
     return (
       <div className="row">
-        <div className="col-xs-12 col-sm-4 r768_float-right">
-          <div className="col-sm-11 col-sm-push-1 p0">
-            <div className="col-xs-6 col-sm-12">
+        <div className="sm-col-12 sm-col-4 r768_float-right">
+          <div className="sm-col-11 col-sm-push-1 p0">
+            <div className="sm-col-6 sm-col-12">
               <div className="pb1"> {/*Filters*/}
                 <Accordion title="Filters">
                   <ul className="list-reset mxn2">
@@ -86,7 +86,7 @@ var PostsIndex = React.createClass({
           </div>
         </div>
 
-        <div className="col-xs-12 col-sm-8 r768_pr0">
+        <div className="sm-col-12 sm-col-8 r768_pr0">
           {this.state.loading ? <Spinner /> : <PostList posts={posts} />}
         </div>
       </div>

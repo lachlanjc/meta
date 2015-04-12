@@ -24,11 +24,11 @@ var ProposalListIem = React.createClass({
         <Tile>
           <div className="px3">
             <div className="row">
-              <div className="col-md-7">
+              <div className="md-col-7">
                 {this.renderTitle()}
                 {this.renderSummary()}
               </div>
-              <div className="col-md-5">
+              <div className="md-col-5">
                 <div className = "row py3">
                   {this.renderProgress()}
                 </div>

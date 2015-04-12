@@ -100,7 +100,7 @@ var SwagTypeSelector = React.createClass({
         </div>
         {rows}
         <div className="row">
-          <div className="col-sm-12">
+          <div className="sm-col-12">
             <div className="checkbox" style={{margin: "0px 10px 25px"}} onChange={this.props.toggleTransparency}>
               <label>
                 <input type="checkbox"> Transparent background</input>
@@ -215,7 +215,7 @@ var BadgePage = React.createClass({
     return (
       <div className="container">
         <div className="row">
-          <div className="col-sm-8 col-sm-offset-2">
+          <div className="sm-col-8 col-sm-offset-2">
             <div className="panel panel-default">
               <div className="flair panel-header">
                 <h4>Assembly Badges</h4>

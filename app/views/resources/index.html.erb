@@ -7,7 +7,7 @@
 
 <div class="sheet-body">
   <div class="row">
-    <div class="col-xs-8 col-md-8">
+    <div class="sm-col-8 md-col-8">
 
       <%= render 'shared/flash' %>
 
@@ -57,7 +57,7 @@
       <div class="panel panel-default">
         <div class="panel-heading">
           <h3 class="panel-title">
-            <button class="btn btn-default btn-xs pull-right">Add repo</button>
+            <button class="button button-default sm-button pull-right">Add repo</button>
             Repositories
           </h3>
         </div>
@@ -88,7 +88,7 @@
         <div class="panel-heading">
           <% if can? :update, @product %>
             <h3 class="panel-title">
-              <button class="btn btn-default btn-xs pull-right">Add integration</button>
+              <button class="button button-default sm-button pull-right">Add integration</button>
               Integrations
             </h3>
           <% end %>

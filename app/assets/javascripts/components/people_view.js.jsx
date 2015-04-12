@@ -130,8 +130,8 @@
 
       return (
         <div>
-          <p className="omega">
-            <ul className="list-inline omega pull-right">
+          <p className="mb0">
+            <ul className="list-inline mb0 pull-right">
               {this.skills(member)}
             </ul>
             <strong>
@@ -262,8 +262,8 @@
     saveButton: function() {
       return (
         <div className="right-align" style={{'margin-top':'16px'}}>
-          <a className="btn btn-default btn-sm" onClick={this.makeUneditable} style={{'margin-right' : '8px'}}>Cancel</a>
-          <a className="btn btn-primary btn-sm" onClick={this.updateBio}>Save</a>
+          <a className="button button-default sm-button" onClick={this.makeUneditable} style={{'margin-right' : '8px'}}>Cancel</a>
+          <a className="button button-primary sm-button" onClick={this.updateBio}>Save</a>
         </div>
       )
     },

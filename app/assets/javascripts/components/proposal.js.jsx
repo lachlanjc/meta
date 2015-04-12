@@ -54,7 +54,7 @@ var Proposal = React.createClass({
 
   renderSubmit: function() {
     var text = this.state.approved ? 'Unvote' : 'Approve'
-    var css = this.state.approved ? 'btn btn-danger' : 'btn btn-success'
+    var css = this.state.approved ? 'button button-red' : 'button button-primary'
 
     if (this.props.proposal.state === "open") {
       return (
@@ -64,7 +64,7 @@ var Proposal = React.createClass({
       )
     } else {
       return (
-        <button className="btn btn-info py1" disabled>
+        <button className="button button-disabled" disabled>
           Voting Closed
         </button>
       )

@@ -49,7 +49,7 @@ var ProposalCreation = React.createClass({
           <Tile>
             <div className = "py2 px3">
               <div className="row">
-                <div className = "col-md-10 col-md-offset-1">
+                <div className = "md-col-10 col-md-offset-1">
                   Proposals are forums for product owners to make decisions governing the fate of the product as a whole.
                   Inside each proposal is one or more contracts: self-executing decisions on a product.  There are many different
                   kinds of potential contracts; we'll be rolling out more contract types in the near future.
@@ -57,7 +57,7 @@ var ProposalCreation = React.createClass({
               </div>
 
               <div className = "row mt1">
-                <div  className = "col-md-10 col-md-offset-1">
+                <div  className = "md-col-10 col-md-offset-1">
                   Each proposal must meet a high bar before it is enacted; More than 50% of participants, weighted by ownership,
                   must sign-off on any given proposal.  We think a high threshold should protect owners from abuse.
                 </div>
@@ -183,11 +183,10 @@ var ProposalCreation = React.createClass({
   },
 
   acceptButton: function() {
-    var text="Create Proposal"
-    var css = "btn btn-info"
+    var text= "Create Proposal"
 
     return (
-      <button className = {css} onClick={this.toggle_create}>
+      <button className="button button-primary" onClick={this.toggle_create}>
         {text}
       </button>
     )
@@ -271,7 +270,7 @@ var ProposalCreation = React.createClass({
   render: function() {
     return (
       <div className="row">
-        <div className="col-md-8">
+        <div className="md-col-8">
           {this.renderTitle()}
           <div className="row">
             <div className="px2">
@@ -279,7 +278,7 @@ var ProposalCreation = React.createClass({
             </div>
           </div>
         </div>
-        <div className="col-md-3 col-md-offset-1 mt3">
+        <div className="md-col-3 col-md-offset-1 mt3">
           <div className = "row">
             {this.renderHelp()}
           </div>

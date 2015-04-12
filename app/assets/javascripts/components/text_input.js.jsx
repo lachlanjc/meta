@@ -55,8 +55,7 @@ var TextInput = React.createClass({
                  placeholder={this.props.label}
           />
         </div>
-        <a className={"btn btn-default btn-" + this.size() + ' ' + this.active()}
-              onClick={this.handleClick}>
+        <a className={"button button-default " + this.size() + "-button " + this.active()} onClick={this.handleClick}>
           {this.props.prompt}
         </a>
       </div>

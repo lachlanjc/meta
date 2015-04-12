@@ -11,7 +11,7 @@ var PostList = React.createClass({
   render: function() {
     return (
       <div className="row mt0">
-        <div className="col-xs-12">
+        <div className="sm-col-12">
           {this.renderPosts()}
         </div>
       </div>

@@ -28,8 +28,8 @@ var StartPage = React.createClass({
         </div>
 
         <div className="container center">
-          
-          <ul className="list list-steps hidden-xs hidden-sm">
+
+          <ul className="list list-steps sm-hide sm-hide">
             <li className="overlay" />
 
             <li>
@@ -63,8 +63,8 @@ var StartPage = React.createClass({
 
             <li className="overlay" />
           </ul>
-          <div className="row visible-sm visible-xs">
-            <div className="col-xs-8 col-xs-offset-2">
+          <div className="row sm-show sm-show">
+            <div className="sm-col-8 mx-auto">
               <ul className="list-reset text-large center">
                 <li className="p2">
                   <strong>Share your idea</strong>
@@ -91,7 +91,7 @@ var StartPage = React.createClass({
                 Start an idea
               </Button>
             </div>
-            <div className="visible-xs mt3" />
+            <div className="sm-show mt3" />
             <div className="mb3">
               Already have a product that could benefit from the community's help?&nbsp;
               <a href="http://port.assembly.com">Start here</a>
@@ -101,23 +101,23 @@ var StartPage = React.createClass({
         <hr style={{marginBottom: 0}} />
         <div className="container center">
           <div className="row">
-            <div className="col-xs-6 col-sm-2" />
-            <div className="col-xs-12 col-sm-4" style={{padding: '50px 40px', borderRight: '1px solid #eee'}}>
+            <div className="sm-col-6 sm-col-2" />
+            <div className="sm-col-12 sm-col-4" style={{padding: '50px 40px', borderRight: '1px solid #eee'}}>
               <h1 style={{fontSize: 80, lineHeight: 1, margin: 0}}>4MM</h1>
               <h2 className="mt0">People</h2>
               <p className="gray-2">4+ million people this year have used the products being built on Assembly.</p>
             </div>
-            {/* <div class="col-xs-12 col-sm-4" style="padding: 50px 40px; border-left: 1px solid #eee; border-right: 1px solid #eee">
+            {/* <div class="sm-col-12 sm-col-4" style="padding: 50px 40px; border-left: 1px solid #eee; border-right: 1px solid #eee">
       <h1 style="font-size: 80px; line-height: 1; margin: 0"></h1>
       <h2 style="font-weight: lighter; margin-top: 0">In Profits Paid Out</h1>
       <p class="gray-2">Over has been paid out to Assembly App Coin holders.</p>
     </div> */}
-            <div className="col-xs-12 col-sm-4" style={{padding: '50px 40px'}}>
+            <div className="sm-col-12 sm-col-4" style={{padding: '50px 40px'}}>
               <h1 style={{fontSize: 80, lineHeight: 1, margin: 0}}>{this.props.productsWorked}</h1>
               <h2 className="mt0">Products</h2>
               <p className="gray-2">{this.props.productsStarted} products started on Assembly. <br />{this.props.productsWorked} products currently being built.</p>
             </div>
-            <div className="col-xs-6 col-sm-2" />
+            <div className="sm-col-6 sm-col-2" />
           </div>
         </div>
         <hr style={{marginTop: 0}} />
@@ -125,16 +125,16 @@ var StartPage = React.createClass({
           <div className="container" style={{paddingBottom: 80}}>
             {/*Why start a product on Assembly? */}
             {/* <div class="row">
-      <div class="col-xs-12 center">
+      <div class="sm-col-12 center">
         <h1 style="font-size: 48px">Think big and go far, together on Assembly</h1>
       </div>
     </div> */}
             <div className="row">
-              <div className="col-xs-12 col-sm-12 center">
+              <div className="sm-col-12 sm-col-12 center">
                 {/* <hr> */}
                 {/* <h2 style="font-size: 32px; font-weight: lighter">And you wondered what the community thinks?</h2> */}
                 <div className="row">
-                  <div className="col-xs-6 col-sm-6">
+                  <div className="sm-col-6 sm-col-6">
                     <div>
                       <div style={{margin: '35px 0 20px 0'}}>
                         <div className="avatar-comment" style={{background: 'url("https://gravatar.com/avatar/4f731655f6de1f6728c716448e0ba634?d=https%3A%2F%2Fassembly.com%2Fassets%2Fdefault_avatar.png&s=170")'}} />
@@ -148,7 +148,7 @@ var StartPage = React.createClass({
                       </div>
                     </div>
                   </div>
-                  <div className="col-xs-6 col-sm-6">
+                  <div className="sm-col-6 sm-col-6">
                     <div>
                       <div style={{margin: '35px 0 20px 0'}}>
                         <div className="avatar-comment" style={{background: 'url("https://gravatar.com/avatar/0231c6b98cf90defe76bdad0c3c66acf?d=https%3A%2F%2Fassembly.com%2Fassets%2Fdefault_avatar.png&s=170")'}} />
@@ -174,19 +174,19 @@ var StartPage = React.createClass({
               <h1>Turn your idea into a great product with people around the world</h1>
             </div>
             <div className="row">
-              <div className="col-xs-2 col-xs-offset-5">
+              <div className="sm-col-2 mx-auto">
                 <hr />
               </div>
             </div>
             <div className="row">
-              <div className="col-xs-12 col-sm-8 col-sm-offset-2 center">
+              <div className="sm-col-12 sm-col-8 col-sm-offset-2 center">
                 <h2 style={{fontSize: 32}}>Smart Questions Answered</h2>
                 <p className="lead gray-2">An outside-the-box platform for launching community products deserves some thoughtful questions ‐ these are our thoughtful answers.</p>
               </div>
             </div>
             <br />
             <div className="row">
-              <div className="col-xs-12 col-sm-6">
+              <div className="sm-col-12 sm-col-6">
                 <div className="panel-group">
                   <div className="panel panel-subtle">
                     <div className="panel-heading">
@@ -287,7 +287,7 @@ var StartPage = React.createClass({
                   </div>
                 </div>
               </div>
-              <div className="col-xs-12 col-sm-6">
+              <div className="sm-col-12 sm-col-6">
                 <div className="panel-group">
                   <div className="panel panel-subtle">
                     <div className="panel-heading">
@@ -340,7 +340,7 @@ var StartPage = React.createClass({
                       </div>
                     </div>
                   </div>
-                        
+
                   <div className="panel panel-subtle">
                     <div className="panel-heading">
                       <p className="panel-title">
@@ -356,7 +356,7 @@ var StartPage = React.createClass({
                           If, when, and how a product earn's revenue is up to the product roadmap set by each product’s Core Team. You’ll find most products have these roadmaps in their discussions or plainly stated on their product pages.
                         </p>
                         <p>
-                          Assembly products earning revenue do so through credit card purchases through the Assembly API or by Assembly provided invoicing when amounts exceed $1,000. 
+                          Assembly products earning revenue do so through credit card purchases through the Assembly API or by Assembly provided invoicing when amounts exceed $1,000.
                         </p>
                       </div>
                     </div>
@@ -377,7 +377,7 @@ var StartPage = React.createClass({
                         <p>Additionally, once a product is earning money a community can use the income to cover costs as it needs – which might including hiring contract employees.</p>
                       </div>
                     </div>
-                  </div>                  
+                  </div>
 
                   <div className="panel panel-subtle">
                     <div className="panel-heading">
@@ -396,7 +396,7 @@ var StartPage = React.createClass({
                       </div>
                     </div>
                   </div>
-                          
+
                 </div>
               </div>
             </div>
@@ -404,7 +404,7 @@ var StartPage = React.createClass({
               <Button type="primary" action="/ideas/new">
                 Start an idea
               </Button>
-              <div className="visible-xs mt3" />
+              <div className="sm-show mt3" />
               <div className="pull-right mb3">
                 Already have a product that could benefit from the community's help?&nbsp;
                 <a href="http://port.assembly.com">Start here</a>

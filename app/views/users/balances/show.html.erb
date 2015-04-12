@@ -4,11 +4,11 @@
 <div class="page page-flat">
   <div class="container">
     <div class="row">
-      <div class="col-md-3 col-xs-3">
+      <div class="md-col-3 sm-col-3">
         <%= render 'users/card', user: @user %>
       </div>
 
-      <div class="col-md-9 col-xs-9">
+      <div class="md-col-9 sm-col-9">
         <div class="page-header">
           <span class="pull-right text-small"><%= Time.now.strftime("%B %Y")%></span>
           <h2 class="page-header-title">Total Earnings: <%= currency @balance.final_earnings %></h2>
@@ -18,7 +18,7 @@
 
         <% if @balance.available_to_payout > 0 %>
           <div class="pull-right">
-            <%= button_to "Withdraw #{currency @balance.available_to_payout}", withdraw_users_balance_path, class: 'btn btn-default' %>
+            <%= button_to "Withdraw #{currency @balance.available_to_payout}", withdraw_users_balance_path, class: 'button button-default' %>
             <% if @balance.available_to_withhold > 0 %>
               <small class="gray-2"><%= currency @balance.available_to_withhold %> will be withheld for US taxes</small>
             <% end %>
@@ -53,9 +53,9 @@
           </table>
         <% else %>
           <div class="row">
-            <div class="col-md-6 col-md-offset-3">
-              <div class="well well-lg omega">
-                <p class="gray-2 omega">
+            <div class="md-col-6 col-md-offset-3">
+              <div class="well well-lg mb0">
+                <p class="gray-2 mb0">
                   You will earn a balance once you've worked on a profitable product
                 </p>
               </div>

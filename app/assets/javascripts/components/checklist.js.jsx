@@ -55,7 +55,7 @@ sendUpdate: function(editable_type, path) {
             <span className="fa fa-remove pointer ml1 gray-2" />
           </span>
 
-          <input className="col-xs-12 py1" name={item.editable_type} type="text" ref="editedData" />
+          <input className="sm-col-12 py1" name={item.editable_type} type="text" ref="editedData" />
           <br />
           <Button action={this.sendUpdate.bind(null, item.editable_type, this.props.entity.path)} block={true}>{item.editable_button_text}</Button>
         </div>

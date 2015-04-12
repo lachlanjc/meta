@@ -3,13 +3,13 @@
 </style>
 
 <div class="row">
-  <div class="col-md-1">
+  <div class="md-col-1">
     Product
   </div>
-  <div class="col-md-3">
+  <div class="md-col-3">
     Task or Discussion
   </div>
-  <div class="col-md-8">
+  <div class="md-col-8">
     Comment Thread
   </div>
 </div>
@@ -18,15 +18,15 @@
   <hr>
 
   <div class="row">
-    <div class="col-md-1">
+    <div class="md-col-1">
       <strong><%=link_to wip.product.name, wip.product %></strong>
     </div>
-    <div class="col-md-3">
+    <div class="md-col-3">
       <strong><%=link_to wip.title, [wip.product, wip] %></strong>
       <br>
       (<%= pluralize(comment_group.size, 'comment', 'comments') %>)
     </div>
-    <div class="col-md-8">
+    <div class="md-col-8">
       <% comment_group.each do |comment| %>
         <strong>@<%= comment.user.username %></strong>
         <%= time_ago_in_words(comment.created_at) %> ago

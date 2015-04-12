@@ -18,8 +18,8 @@
       </td>
       <td><%= app.product.pitch %></td>
       <td>
-        <%= link_to 'Approve', admin_pitch_week_application_approve_path(app.id), method: :patch, class: %w(btn btn-xs btn-success) %>
-        <%= link_to 'Decline', admin_pitch_week_application_decline_path(app.id), method: :patch, class: %w(btn btn-xs btn-danger) %>
+        <%= link_to 'Approve', admin_pitch_week_application_approve_path(app.id), method: :patch, class: %w(button button-primary sm-button) %>
+        <%= link_to 'Decline', admin_pitch_week_application_decline_path(app.id), method: :patch, class: %w(button sm-button button-red) %>
       </td>
     </tr>
   <% end %>

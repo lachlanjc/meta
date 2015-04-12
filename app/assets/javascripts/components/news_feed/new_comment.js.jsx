@@ -42,10 +42,8 @@ var NewComment = React.createClass({
   buttonClasses: function(btnClass) {
     var classes = {
       disabled: this.state.text.length < 2,
-      'pill-button': true,
-      'pill-button-theme-white': true,
-      'pill-button-border': true,
-      'pill-button-shadow': true,
+      'button': true,
+      'button-default': true,
       right: true
     };
 

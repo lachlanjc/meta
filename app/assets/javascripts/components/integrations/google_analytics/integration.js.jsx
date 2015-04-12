@@ -36,7 +36,7 @@
         return (
           <td>
             <a href="javascript:void(0);"
-                className="btn btn-sm btn-default"
+                className="button sm-button button-default"
                 onClick={this.configure}>
               Configure
             </a>

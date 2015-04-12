@@ -6,7 +6,7 @@
 
 <div class="sheet-body">
   <div class="row">
-    <div class="col-md-9">
+    <div class="md-col-9">
 
       <% if @milestone.feature_image.present? %>
         <img class="img-thumbnail" src="<%= firesize_url %>/630x300/<%= URI.escape @milestone.feature_image.attachment.url %>">
@@ -23,24 +23,24 @@
     </div>
 
 
-    <div class="col-md-3">
+    <div class="md-col-3">
 
       <div class="panel panel-default">
         <div class="panel-body">
 
-          <div class="progress progress-small omega" style="margin-bottom: 10px;">
+          <div class="progress progress-small mb0" style="margin-bottom: 10px;">
             <div class="progress-bar progress-bar-success" style="width:<%= number_to_percentage @milestone.progress * 100, precision: 0 %>;">
 
             </div>
           </div>
 
-          <h6 class="gray-2 omega">
+          <h6 class="gray-2 mb0">
             <span class="pull-right"><%= number_to_percentage @milestone.progress * 100, precision: 0 %></span>
             Progress
           </h6>
         </div>
 
-        <ul class="list-group list-group-breakout small omega">
+        <ul class="list-group list-group-breakout small mb0">
           <li class="list-group-item">
             <span class="badge"><%= @milestone.tasks.open.count %></span>
             Bounties remaining
@@ -58,7 +58,7 @@
           <h6 class="panel-title">Contributors</h6>
         </div>
         <div class="panel-body">
-          <ul class="list-grid omega">
+          <ul class="list-grid mb0">
             <% @milestone.wip.contributors.each do |contributor| %>
               <li>
                 <%= avatar_tag(contributor, 24) %>
@@ -92,7 +92,7 @@
             <% end %>
           </ul>
 
-          <p class="text-small gray-2 omega" style="clear: both; margin-top: 8px;">Designs added to tasks in this project will be displayed here</p>
+          <p class="text-small gray-2 mb0" style="clear: both; margin-top: 8px;">Designs added to tasks in this project will be displayed here</p>
         </div>
       </div>
     </div>

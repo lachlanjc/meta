@@ -4,11 +4,11 @@
 <div class="page-header sheet-header">
   <% if current_user.staff? %>
     <% if @post.flagged? %>
-      <button class="btn btn-muted disabled pull-right">Post already flagged</button>
+      <button class="button button-disabled pull-right">Post already flagged</button>
     <% else %>
       <%= form_for [@post.product, @post] do |f| %>
         <%= f.hidden_field :flagged_at, value: Time.now %>
-        <%= f.submit 'Flag this post', class: %w(btn btn-danger pull-right) %>
+        <%= f.submit 'Flag this post', class: %w(button button-red pull-right) %>
       <% end %>
     <% end %>
   <% end %>
@@ -18,7 +18,7 @@
 
 <div class="sheet-body">
   <div class="row">
-    <div class="col-md-9 col-xs-9">
+    <div class="md-col-9 sm-col-9">
       <%= form_for [@post.product, @post] do |f| %>
         <div class="form-group">
           <%= f.label :title, 'Post title', class: 'form-label' %>
@@ -36,7 +36,7 @@
         </div>
 
         <div class="form-actions">
-          <%= f.submit 'Update', class: %w(btn btn-primary) %>
+          <%= f.submit 'Update', class: %w(button button-primary) %>
         </div>
       <% end %>
     </div>

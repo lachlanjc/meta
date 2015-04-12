@@ -7,7 +7,7 @@
 <% if false && staff? %>
   <div class="sheet-body">
     <div class="row">
-      <div class="col-md-12 col-xs-12">
+      <div class="sm-col-12">
         <%= react_component(
         'Contracts',
         #activeContracts: VestingSerializer.new(@active_contracts),
@@ -27,7 +27,7 @@
 
 
 <% if current_user && @product.core_team?(current_user) %>
-  <button class="btn btn-success pull-right" data-toggle="modal" data-target="#new-contract-modal">
+  <button class="button button-primary pull-right" data-toggle="modal" data-target="#new-contract-modal">
     Create contract
   </button>
 
@@ -67,8 +67,8 @@
 
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              <button type="submit" class="btn btn-primary">Create contract</button>
+              <button type="button" class="button button-default" data-dismiss="modal">Close</button>
+              <button type="submit" class="button button-primary">Create contract</button>
             </div>
           </div>
         </form>

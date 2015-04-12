@@ -222,7 +222,7 @@ let Bounty = React.createClass({
 
     return (
       <li className="mb0">
-        <a href="#" className="btn btn-default disabled">
+        <a href="#" className="button button-default disabled">
           {bounty.state === 'resolved' ? 'Completed & Closed' : 'Closed'}
         </a>
       </li>

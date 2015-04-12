@@ -64,7 +64,7 @@ const SignupForm = React.createClass({
     let award = this.state.pendingAward
     return (
       <div className="row">
-        <div className="col-sm-6 col-sm-offset-3">
+        <div className="sm-col-6 col-sm-offset-3">
           <div className="center">
             <img className="py4" src="/assets/logo.min.png" />
             {award ?

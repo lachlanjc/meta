@@ -116,35 +116,31 @@
           </div>
 
           <FormGroup>
-            <div className="form-group gray-2 omega">
+            <div className="form-group gray-2 mb0">
               <label>
                 {this.props.addonText + this.state.inputPreview}
               </label>
             </div>
             <div className="input-group" style={{ width: '70%' }}>
               <input type="text"
-                  className="form-control"
-                  value={this.state.inputPreview}
-                  placeholder={this.props.placeholder}
-                  onChange={this.onChange} />
-              <span className="input-group-btn">
-                <a
-                    href="javascript:"
-                    className="btn btn-primary"
-                    disabled={this.buttonState()}
-                    onClick={this.createEmptyRepo}>
-                  Create empty repo
+                     className="form-control"
+                     value={this.state.inputPreview}
+                     placeholder={this.props.placeholder}
+                     onChange={this.onChange} />
+              <div className="inline-block ">
+                <a className="inline-block ml1 button button-primary"
+                   disabled={this.buttonState()}
+                   onClick={this.createEmptyRepo}>
+                   Create empty repo
                 </a>
-                <a  id="create-with-launchpad"
-                    href="javascript:"
-                    className="btn btn-primary"
-                    onClick={this.createWithLaunchpad}
-                    disabled={this.buttonState()}
-                    data-toggle="tooltip"
-                    title="Let Assembly generate a landing page automatically using GitHub Pages.">
-                  Create with landing page
+                <a className="inline-block ml1 button button-default"
+                   onClick={this.createWithLaunchpad}
+                   disabled={this.buttonState()}
+                   data-toggle="tooltip"
+                   title="Let Assembly generate a landing page automatically using GitHub Pages">
+                   Create with landing page
                 </a>
-              </span>
+              </div>
             </div>
           </FormGroup>
         </form>

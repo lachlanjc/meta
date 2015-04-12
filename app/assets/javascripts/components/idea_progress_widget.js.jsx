@@ -70,7 +70,7 @@ const IdeaProgressWidget = React.createClass({
           <div className="center"><strong>{this.state.stages[this.state.activeStage]['cta'] || this.state.stages[this.state.activeStage]['name']}</strong>
           </div>
         </div>
-        <div className="col-sm-12">
+        <div className="sm-col-12">
           <ul className="indicator-container mb0">
             {stages}
           </ul>

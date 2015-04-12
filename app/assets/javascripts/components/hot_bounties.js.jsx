@@ -67,7 +67,7 @@ const HotBounties = React.createClass({
 
   render: function() {
     return (
-      <div className="col-md-8 col-md-offset-2 mb3">
+      <div className="md-col-8 col-md-offset-2 mb3">
         {this.renderHeader()}
         {this.renderBounties()}
       </div>

@@ -8,7 +8,7 @@
 
 <div class="sheet-body">
   <div class="row">
-    <div class="col-md-8">
+    <div class="md-col-8">
       <%= form_for [@product, @wip] do |f| %>
         <div class="form-group">
           <%= f.label :title, class: 'control-label' %>
@@ -65,7 +65,7 @@
         </div>
 
         <div class="form-actions">
-          <%= f.button 'Update task', 'class' => 'btn btn-primary' %>
+          <%= f.button 'Update task', 'class' => 'button button-primary' %>
         </div>
       <% end %>
     </div>

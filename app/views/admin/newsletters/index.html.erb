@@ -11,7 +11,7 @@
     <p class="gray-2">
       The next newsletter will be sent in <%= time_ago_in_words(@newsletter.next_published_at) %>.
     </p>
-    <%= f.submit 'Preview & queue newsletter', class: %w(btn btn-primary) %>
+    <%= f.submit 'Preview & queue newsletter', class: %w(button button-primary) %>
   </div>
 <% end %>
 
@@ -39,11 +39,11 @@
           <% elsif newsletter.cancelled? %>
             <%= newsletter.cancelled_at %>
           <% else %>
-            <%= link_to [:admin, newsletter], method: :delete, confirm: 'Are you sure you want to cancel this newsletter?', class: 'btn btn-danger' do %>
+            <%= link_to [:admin, newsletter], method: :delete, confirm: 'Are you sure you want to cancel this newsletter?', class: 'button button-red' do %>
               <span class="glyphicon glyphicon-ban-circle"></span>
               Cancel
             <% end %>
-            <%= link_to [:admin, newsletter, :publish], method: :patch, confirm: 'Continue sending email to ALL USERS?', class: 'btn btn-default' do %>
+            <%= link_to [:admin, newsletter, :publish], method: :patch, confirm: 'Continue sending email to ALL USERS?', class: 'button button-default' do %>
               <span class="glyphicon glyphicon-share-alt"></span>
               Send Now
             <% end %>

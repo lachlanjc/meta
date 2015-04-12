@@ -78,9 +78,9 @@ $table-border-color: $brand-divider;
 
 $btn-font-weight:    600;
 
-$btn-default-color:  $brand-primary;
-$btn-default-bg:     #fff;
-$btn-default-border: $brand-border;
+$button-default-color:  $brand-primary;
+$button-default-bg:     #fff;
+$button-default-border: $brand-border;
 
 $btn-primary-color:  #fff;
 $btn-primary-bg:     $brand-primary;
@@ -102,13 +102,13 @@ $btn-danger-color:   #fff;
 $btn-danger-bg:      $brand-danger;
 $btn-danger-border:  darken($btn-danger-bg, 5%);
 
-$btn-twitter-color:  white;
-$btn-twitter-bg:     $twitter;
-$btn-twitter-border: darken($btn-twitter-bg, 5%);
+$button-twitter-color:  white;
+$button-twitter-bg:     $twitter;
+$button-twitter-border: darken($button-twitter-bg, 5%);
 
-$btn-facebook-color:  white;
-$btn-facebook-bg:     $facebook;
-$btn-facebook-border: darken($btn-facebook-bg, 5%);
+$button-facebook-color:  white;
+$button-facebook-bg:     $facebook;
+$button-facebook-border: darken($button-facebook-bg, 5%);
 
 $btn-link-disabled-color: $gray-1;
 

@@ -276,7 +276,7 @@ var NewsFeedItemComments = React.createClass({
       var questionButtons = (
         <div className="clearfix mb3 ml4">
           <div className="left">
-            <button className="pill-button pill-button-theme-white pill-button-border pill-button-shadow mr3"
+            <button className="button button-default mr3"
                 onClick={this.handleAnswerQuestionClick.bind(this, comment.user.username)}>
               <span style={{ fontSize: '1.2rem', lineHeight: '2rem' }}>Answer this question</span>
             </button>

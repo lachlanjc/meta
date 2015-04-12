@@ -57,7 +57,7 @@
         return (
           <li key={u}>
             <a onClick={this.updateState(u)}>
-              <span className="btn btn-xs btn-default">{u}</span>
+              <span className="button sm-button button-default">{u}</span>
             </a>
           </li>
         )

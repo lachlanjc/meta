@@ -25,7 +25,7 @@ var FormGroup = require('./form_group.js.jsx');
       return (
         <form onSubmit={this.handleSubmit}>
           <div className="p3">
-            <h2 className="alpha">Ask a friend</h2>
+            <h2 className="mt0">Ask a friend</h2>
             <p className="gray-2">Know somebody who could help with this? Anybody can help out, all you need to do is ask.</p>
 
             <div className="alert alert-info alert-dismissable" role="alert" style={{ display: this.state.alertDisplay }}>
@@ -51,7 +51,7 @@ var FormGroup = require('./form_group.js.jsx');
               <p className="help-block">Start off on the right foot; generosity always pays off.</p>
 
               <div className="btn-group center" data-toggle="buttons" style={{width:'100%'}}>
-                <label className="btn btn-default active" style={{width:'34%'}}>
+                <label className="btn btn-default rounded-left active" style={{width:'34%'}}>
                   <input type="radio" name="invite[tip_cents]" value="10" defaultChecked={true} />
                   <span className="icon icon-app-coin yellow"></span><span className="yellow">10</span>
                 </label>
@@ -71,7 +71,7 @@ var FormGroup = require('./form_group.js.jsx');
           <div className="p3">
             <input type="hidden" name="invite[via_type]" value={this.props.via_type} />
             <input type="hidden" name="invite[via_id]" value={this.props.via_id} />
-            <button className="btn btn-primary btn-block" style={{ marginBottom: 20 }}>Send message</button>
+            <button className="button button-primary button-block" style={{ marginBottom: 20 }}>Send message</button>
           </div>
         </form>
       )

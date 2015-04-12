@@ -30,7 +30,7 @@
                 placement="bottom"
                 visible={this.state.popoverShown}
                 onHide={this.handleHide}>
-        <a className="clickable btn btn-default btn-sm" onClick={this.togglePopover}>Feature this bounty</a>
+        <a className="clickable button button-default sm-button" onClick={this.togglePopover}>Feature this bounty</a>
       </BsPopover>
     },
 
@@ -73,7 +73,7 @@
 
   var PostedBountyButton = React.createClass({
     render: function() {
-      return <a className="clickable btn btn-default btn-sm" onClick={this.handleClick}>Unfeature this</a>
+      return <a className="clickable button button-default sm-button" onClick={this.handleClick}>Unfeature this</a>
     },
 
     handleClick: function() {

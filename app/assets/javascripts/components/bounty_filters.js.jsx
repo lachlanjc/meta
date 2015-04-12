@@ -22,7 +22,7 @@
       if (this.props.selected_user_id || this.props.selected_tag || this.props.selected_sort) {
         return (
           <li>
-            <a href={this.props.url} className="btn btn-default">
+            <a href={this.props.url} className="button button-default">
               Clear filters
             </a>
           </li>

@@ -17,10 +17,10 @@ var Governance = React.createClass({
       return (
         <div>
           <div className="row">
-            <div className="py2 col-md-8">
+            <div className="py2 md-col-8">
               <ProposalList proposals={this.props.product.proposals} />
             </div>
-            <div className = "py2 col-md-4">
+            <div className = "py2 md-col-4">
               <Tile>
                 {this.renderText()}
               </Tile>
@@ -37,11 +37,11 @@ var Governance = React.createClass({
     else {
       return (
         <div>
-          <div className = "py2 col-md-12 ">
-            <div className = "col-md-8">
+          <div className = "py2 md-col-12 ">
+            <div className = "md-col-8">
               <h3>There are no proposals yet for this product</h3>
             </div>
-            <div className = "col-md-4">
+            <div className = "md-col-4">
               <Tile>
                 {this.renderText()}
               </Tile>

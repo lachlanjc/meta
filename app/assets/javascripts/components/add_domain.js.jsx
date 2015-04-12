@@ -10,7 +10,7 @@ var AddDomain = React.createClass({
 
   render: function() {
     return <div>
-      <button className="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown">
+      <button className="button button-default sm-button dropdown-toggle" type="button" data-toggle="dropdown">
         Add domain
         <span className="caret"></span>
       </button>
@@ -81,10 +81,10 @@ var NewDomainTransfer = React.createClass({
               </FormGroup>
             </div>
             <div className="modal-footer">
-              <button type="button" className={'btn btn-default'} onClick={this.props.onCancel}>
+              <button type="button" className={'button button-default'} onClick={this.props.onCancel}>
                 Cancel
               </button>
-              <SubmitButton onClick={this.submitForm} className="btn btn-success" disableWith="Starting..." disabled={this.state.submitting}>
+              <SubmitButton onClick={this.submitForm} className="button button-primary" disableWith="Starting..." disabled={this.state.submitting}>
                 Start Transfer
               </SubmitButton>
             </div>
@@ -123,10 +123,10 @@ var DomainPurchaseApplication = React.createClass({
               </FormGroup>
             </div>
             <div className="modal-footer">
-              <button type="button" className={'btn btn-default'} onClick={this.props.onCancel}>
+              <button type="button" className={'button button-default'} onClick={this.props.onCancel}>
                 Cancel
               </button>
-              <SubmitButton onClick={this.submitForm} className="btn btn-success" disableWith="Saving..." disabled={this.state.submitting}>
+              <SubmitButton onClick={this.submitForm} className="button button-primary" disableWith="Saving..." disabled={this.state.submitting}>
                 Apply
               </SubmitButton>
             </div>

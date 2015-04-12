@@ -87,7 +87,7 @@ let NewPostForm = React.createClass({
           <div className="form-actions">
             <div className="btn-group">
               {this.renderPreviewButton()}
-              <input type="submit" className="btn btn-primary" value="Submit" />
+              <input type="submit" className="button button-primary" value="Submit" />
             </div>
           </div>
         </div>
@@ -100,7 +100,7 @@ let NewPostForm = React.createClass({
       let product = this.state.product;
 
       return (
-        <a className="btn btn-default"
+        <a className="button button-default"
             id="preview-post-btn"
             href={'/' + product.slug + '/posts/preview'}
             onClick={this.handlePreviewClick}
