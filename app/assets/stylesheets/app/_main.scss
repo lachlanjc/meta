@@ -90,31 +90,6 @@ mark, .mark {
   background-color: lighten($state-warning-bg, 5%);
 }
 
-
-// -- forms ---------------------
-// input
-input, select, textarea, fieldset {
-  margin-bottom: 0;
-}
-
-input[type=text],
-input[type=datetime],
-input[type=datetime-local],
-input[type=email],
-input[type=month],
-input[type=number],
-input[type=password],
-input[type=search],
-input[type=tel],
-input[type=time],
-input[type=url],
-input[type=week] {
-  height: auto;
-  padding: 6px 12px;
-  line-height: $line-height-base;
-  outline: none;
-}
-
 // -- lists ---------------------
 .list-inline-piped {
   > li + li {

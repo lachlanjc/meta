@@ -123,7 +123,7 @@ var ProposalCreation = React.createClass({
   renderUserPicker: function() {
     return (
       <TypeaheadUserInput autofocus="autofocus"
-          className="form-control"
+          className="field-light"
           data-validate-length="2"
           type="text"
           required="true"
@@ -162,7 +162,7 @@ var ProposalCreation = React.createClass({
               <label className="control-label">
                 Proposal Name
               </label>
-              <div><input className="form-control" type="text" onChange={this.handleTextChange('name')}></input></div>
+              <div><input className="field-light" type="text" onChange={this.handleTextChange('name')}></input></div>
             </div>
 
             <div className="form-group">
@@ -214,7 +214,7 @@ var ProposalCreation = React.createClass({
               </label>
             </div>
             <div className="col col-5">
-              <input className="form-control" value={this.state.coins} type="number" onChange={this.handleTextChange('coins')}></input>
+              <input className="field-light" value={this.state.coins} type="number" onChange={this.handleTextChange('coins')}></input>
             </div>
         </div>
 

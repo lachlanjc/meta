@@ -41,12 +41,12 @@
 
               <div class="form-group">
                 <%= f.label :login, 'Email or username', class: 'input-label' %>
-                <%= f.text_field :login, autofocus: true, class: 'form-control input-lg', placeholder: 'jane@example.com' %>
+                <%= f.text_field :login, autofocus: true, class: 'field-light input-lg', placeholder: 'jane@example.com' %>
               </div>
 
               <div class="form-group">
                 <%= f.label :password, class: 'input-label' %>
-                <%= f.password_field :password, autocomplete: false, class: 'form-control input-lg' %>
+                <%= f.password_field :password, autocomplete: false, class: 'field-light input-lg' %>
                 <div class="help-block">
                   <a href="<%= new_user_password_path %>">Forgot your password?</a>
                 </div>

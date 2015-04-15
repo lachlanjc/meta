@@ -12,14 +12,14 @@
 
         <div class="form-group">
           <%= f.label :title, 'Project Name', class: 'control-label' %>
-          <%= f.text_field :title, autofocus: '', data: { 'validate-length' => 2 }, class: 'form-control' %>
+          <%= f.text_field :title, autofocus: '', data: { 'validate-length' => 2 }, class: 'field-light' %>
         </div>
 
         <div class="form-group">
           <%= f.fields_for :milestone, Milestone.new do |f| %>
             <%= f.label :description, class: 'form-label' %>
             <div class="markdown-editor-control js-markdown-editor dropzone js-dropzone">
-              <%= f.text_area :description, rows: 3, class: 'form-control' %>
+              <%= f.text_area :description, rows: 3, class: 'field-light' %>
               <div class="dropzone-inner js-dropzone-select">
                 To attach files drag &amp; drop here or <a href="#">select files
                 from your computer</a>...

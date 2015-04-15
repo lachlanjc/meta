@@ -4,7 +4,7 @@
     <% if !signed_in? %>
       <div class="media-body" id="comment">
         <div class="js-markdown-editor js-dropzone">
-          <%= text_area_tag 'event_comment[body]', nil, class: 'form-control', rows: 1, placeholder: "Introduce yourself, we'd love to hear from you", disabled: true %>
+          <%= text_area_tag 'event_comment[body]', nil, class: 'field-light', rows: 1, placeholder: "Introduce yourself, we'd love to hear from you", disabled: true %>
         </div>
         <div><div data-react-class="ChatTypingLabel"></div>
       </div>

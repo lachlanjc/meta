@@ -36,7 +36,7 @@ module.exports = React.createClass({
     return <div style={style} onKeyDown={this.handleKeyDown}>
       <Tile>
         <div className="p2">
-          <input placeholder="Search users" className="form-control full-width mb2" valueLink={this.linkState('query')} />
+          <input placeholder="Search users" className="field-light full-width mb2" valueLink={this.linkState('query')} />
 
           {this.state.searchResults.map(this.renderUserRow).toJS()}
         </div>

@@ -64,7 +64,7 @@
           {this.renderAttachmentInputs()}
           <TypeaheadUserTextArea
               {...this.props}
-              className="form-control"
+              className="field-light"
               rows="4"
               id={this.props.id || 'markdown-editor'}
               style={{height: '176px'}}

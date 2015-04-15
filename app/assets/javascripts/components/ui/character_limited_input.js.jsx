@@ -46,10 +46,10 @@ let CharacterLimitedInput = React.createClass({
     } = this.props;
 
     let classes = React.addons.classSet({
-      'form-control': true,
-      'input-lg': size === 'large',
-      'input-md': size === 'medium',
-      'input-sm': size === 'small'
+      'field-light': true,
+      'lg-input': size === 'large',
+      'md-input': size === 'medium',
+      'sm-input': size === 'small'
     });
 
     let control = <input type="text" onChange={this.handleChange} className={classes} value={value} />;

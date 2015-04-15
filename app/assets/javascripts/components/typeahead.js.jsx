@@ -15,7 +15,7 @@ var Typeahead = React.createClass({
         <div className="form-group">
           <label className="sr-only">{this.props.label}</label>
           <input type="text"
-                 className={"form-control input-" + this.size()}
+                 className={"field-light input-" + this.size()}
                  valueLink={this.linkState('inputValue')}
                  style={{width: this.props.width, 'padding-left': '5px'}}
           />

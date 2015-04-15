@@ -12,7 +12,7 @@
       <%= form_for [@product, @wip] do |f| %>
         <div class="form-group">
           <%= f.label :title, class: 'control-label' %>
-          <%= f.text_field :title, 'class' => 'form-control', data: {'validate-length' => 2} %>
+          <%= f.text_field :title, class: 'field-light', data: {'validate-length' => 2} %>
         </div>
 
         <div class="form-group" data-react-class="NewComment" data-react-props="<%= {

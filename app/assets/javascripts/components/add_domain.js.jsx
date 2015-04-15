@@ -73,11 +73,11 @@ var NewDomainTransfer = React.createClass({
 
               <FormGroup error={this.state.errors.name}>
                 <label className="control-label">Domain name</label>
-                <input name="domain[name]" type="text" className="form-control" placeholder="example.com" autofocus />
+                <input name="domain[name]" type="text" className="field-light" placeholder="example.com" autofocus />
               </FormGroup>
               <FormGroup error={this.state.errors.transfer_auth_code}>
                 <label className="control-label">Transfer Authorization Code</label>
-                <input name="domain[transfer_auth_code]" type="text" className="form-control" />
+                <input name="domain[transfer_auth_code]" type="text" className="field-light" />
               </FormGroup>
             </div>
             <div className="modal-footer">
@@ -119,7 +119,7 @@ var DomainPurchaseApplication = React.createClass({
 
               <FormGroup error={this.state.errors.name}>
                 <label className="control-label">Domain name</label>
-                <input name="domain[name]" type="text" className="form-control" placeholder="example.com" autofocus />
+                <input name="domain[name]" type="text" className="field-light" placeholder="example.com" autofocus />
               </FormGroup>
             </div>
             <div className="modal-footer">

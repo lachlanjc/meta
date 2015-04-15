@@ -61,7 +61,7 @@
                 <label className="form-label">Account Name</label>
                 <input type="text"
                     name="integration[config[account_name]]"
-                    className="form-control"
+                    className="field-light"
                     onChange={this.handleChange.bind(this, 'account')}
                     value={this.state.account}
                     placeholder="The name of the Google Analytics account you're using." />
@@ -71,7 +71,7 @@
                 <label className="form-label">Web Property Name</label>
                 <input type="text"
                     name="integration[config[property_name]]"
-                    className="form-control"
+                    className="field-light"
                     onChange={this.handleChange.bind(this, 'property')}
                     value={this.state.property}
                     placeholder="The name of the Google Analytics web property you're using." />
@@ -82,7 +82,7 @@
                 <label className="form-label">Profile Name</label>
                 <input type="text"
                     name="integration[config[profile_name]]"
-                    className="form-control"
+                    className="field-light"
                     onChange={this.handleChange.bind(this, 'profile')}
                     value={this.state.profile}
                     placeholder="The name of the Google Analytics web profile you're using." />

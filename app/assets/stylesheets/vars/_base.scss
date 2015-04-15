@@ -289,23 +289,13 @@ $pagination-disabled-color:  $gray-1;
 $pagination-disabled-bg:     #fff;
 $pagination-disabled-border: #ddd;
 
+// Form fields
+$form-field-font-size: $font-size-base;
+$form-field-height: 2.25rem;
+$form-field-padding-y: .25rem;
+$form-field-padding-x: .5rem;
 
-// Pager
-
-$pager-bg:            $pagination-bg;
-$pager-border:        $pagination-border;
-$pager-border-radius: 15px;
-
-$pager-hover-bg: $pagination-hover-bg;
-
-$pager-active-bg:    $pagination-active-bg;
-$pager-active-color: $pagination-active-color;
-
-$pager-disabled-color: $pagination-disabled-color;
-
-
-// Form states and alerts
-
+// States
 $state-success-text:   $green;
 $state-success-bg:     lighten($state-success-text, 40%);
 $state-success-border: darken(adjust-hue($state-success-bg, -10), 5%);

@@ -5,14 +5,14 @@
     <div class="md-col-5">
       <%= form_group @tax_info, :full_name do %>
         <%= f.label :full_name %>
-        <%= f.text_field :full_name, class: 'form-control' %>
+        <%= f.text_field :full_name, class: 'field-light' %>
         <p class="help-block">As shown on your income tax return</p>
       <% end %>
     </div>
     <div class="md-col-5 col-md-offset-1">
       <%= form_group @tax_info, :business_name do %>
         <%= f.label :business_name %>
-        <%= f.text_field :business_name, class: 'form-control' %>
+        <%= f.text_field :business_name, class: 'field-light' %>
         <p class="help-block">If different from full name (optional)</p>
       <% end %>
     </div>
@@ -22,7 +22,7 @@
     <div class="md-col-5">
       <%= form_group @tax_info, :taxpayer_id do %>
         <%= f.label :taxpayer_id, 'Taxpayer ID Number' %>
-        <%= f.text_field :taxpayer_id, class: 'form-control', maxlength: 11 %>
+        <%= f.text_field :taxpayer_id, class: 'field-light', maxlength: 11 %>
         <label class="radio-inline">
           <%= f.radio_button :taxpayer_type, 'ssn', checked: true %> SSN
         </label>
@@ -34,7 +34,7 @@
     <div class="md-col-5 col-md-offset-1">
       <%= form_group @tax_info, :classification do %>
         <%= f.label :classification, 'Tax Classification' %><br/>
-        <%= f.select :classification, User::W9::CLASSIFICATIONS, html: {class: 'form-control block'} %>
+        <%= f.select :classification, User::W9::CLASSIFICATIONS, html: {class: 'field-light block'} %>
       <% end %>
     </div>
   </div>
@@ -43,14 +43,14 @@
     <div class="md-col-5">
       <%= form_group @tax_info, :address do %>
         <%= f.label :address %>
-        <%= f.text_field :address, class: 'form-control' %>
+        <%= f.text_field :address, class: 'field-light' %>
         <p class="help-block">Including apt. or suite no.</p>
       <% end %>
     </div>
     <div class="md-col-5 col-md-offset-1">
       <%= form_group @tax_info, :city do %>
         <%= f.label :city %>
-        <%= f.text_field :city, class: 'form-control' %>
+        <%= f.text_field :city, class: 'field-light' %>
         <p class="help-block">Including apt. or suite no.</p>
       <% end %>
     </div>
@@ -62,10 +62,10 @@
         <%= f.label :state, 'State / ZIP code' %>
         <div class="row">
           <div class="md-col-9">
-            <%= f.select :state, Country.find_country_by_name('united states').states.map{|k, v| [v['name'], k] }, class: 'form-control', maxlength: 2 %>
+            <%= f.select :state, Country.find_country_by_name('united states').states.map{|k, v| [v['name'], k] }, class: 'field-light', maxlength: 2 %>
           </div>
           <div class="md-col-3">
-            <%= f.text_field :zip, class: 'form-control' %>
+            <%= f.text_field :zip, class: 'field-light' %>
           </div>
         </div>
       <% end %>
@@ -74,7 +74,7 @@
       <%= form_group @tax_info, :date_of_birth do %>
         <%= f.label :date_of_birth %>
         <div class="input-group">
-          <%= f.date_select :date_of_birth, class: 'form-control', start_year: Time.now.year - 120 %>
+          <%= f.date_select :date_of_birth, class: 'field-light', start_year: Time.now.year - 120 %>
         </div>
         <p class="help-block">Required for individuals</p>
       <% end %>
@@ -85,7 +85,7 @@
     <div class="md-col-5">
       <%= form_group @tax_info, :signature do %>
         <%= f.label :signature, 'Your signature'%>
-        <%= f.text_field :signature, class: 'form-control' %>
+        <%= f.text_field :signature, class: 'field-light' %>
         <p class="help-block">Typing your name acts as your signature</p>
       <% end %>
     </div>

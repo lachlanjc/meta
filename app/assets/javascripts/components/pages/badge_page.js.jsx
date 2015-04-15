@@ -13,7 +13,7 @@ var TextInput = React.createClass({
     return (
       <div className="form-group">
         <label htmlFor="productName">1. Enter the name of your product</label>
-        <input type="text" className="form-control" placeholder="Product name" onChange={this.handleChange} />
+        <input type="text" className="field-light" placeholder="Product name" onChange={this.handleChange} />
       </div>
     )
   }
@@ -187,7 +187,7 @@ var CodeBox = React.createClass({
       <div>
         <div className="form-group">
           <label htmlFor="codeBox">3. Copy and paste your code snippet into your project</label>
-          <textarea type="textarea" className="form-control flair" onFocusCapture={this.handleFocus} onMouseUpCapture={this.handleMouseUp} readOnly value={codeString} rows="4"></textarea>
+          <textarea type="textarea" className="field-light flair" onFocusCapture={this.handleFocus} onMouseUpCapture={this.handleMouseUp} readOnly value={codeString} rows="4"></textarea>
         </div>
         <hr />
         <div className="right">

@@ -24,7 +24,7 @@
                 <p class="help-block pull-right mt0 mb0"><%= f.object.errors[:email].to_sentence %></p>
               <% end %>
               <%= f.label :email, 'Email', class: 'control-label' %>
-              <%= f.email_field :email, autofocus: true, class: 'form-control input-lg', placeholder: 'jane@example.com' %>
+              <%= f.email_field :email, autofocus: true, class: 'field-light input-lg', placeholder: 'jane@example.com' %>
             </div>
 
             <%= f.submit 'Send password reset email', class: 'button button-primary button-block lg-button' %>

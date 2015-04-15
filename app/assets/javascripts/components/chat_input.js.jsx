@@ -80,7 +80,7 @@ var ChatInput = React.createClass({
           onUserChanged={this.handleUserChanged}
           onUserSelected={this.handleUserSelected}>
         <div className="js-markdown-editor js-dropzone">
-          <textarea className="form-control" rows="1" style={inputStyle}
+          <textarea className="field-light" rows="1" style={inputStyle}
             ref="textarea"
             onKeyPress={this.onEnterKey(this.handleEnter)}
             onChange={this.handleChange} value={this.state.message} />

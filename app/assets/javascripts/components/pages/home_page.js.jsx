@@ -120,7 +120,7 @@ var HomePage = React.createClass({
 
             <div className="sm-col sm-col-4">
               <form action="/discover">
-                <input type="search" className="form-control form-control-search" placeholder="Search all products" name="search" defaultValue={this.props.search} />
+                <input type="search" className="field-light field-search" placeholder="Search all products" name="search" defaultValue={this.props.search} />
               </form>
             </div>
           </div>

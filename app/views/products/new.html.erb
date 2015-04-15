@@ -23,22 +23,22 @@
               A name is important, but it can always change. If you have a codename already, use that, otherwise don't get too hung up on making it perfect.
             </p>
             <% if params[:name] %>
-            <%= f.text_field :name, class: 'form-control', autofocus: true, value: params[:name] %>
+            <%= f.text_field :name, class: 'field-light', autofocus: true, value: params[:name] %>
             <% else %>
-              <%= f.text_field :name, class: 'form-control', autofocus: true %>
+              <%= f.text_field :name, class: 'field-light', autofocus: true %>
             <% end %>
           <% end %>
 
           <%= form_group @product, :pitch, class: 'mb3' do %>
             <%= f.label :pitch, 'Five word pitch', class: 'control-label' %>
             <p class="h6 gray-2">If you had 30 seconds to describe your product to a friend, what would you say? Use simple, direct words.</p>
-            <%= f.text_field :pitch, class: 'form-control', placeholder: @four_word_story_example, value: params[:pitch] || '' %>
+            <%= f.text_field :pitch, class: 'field-light', placeholder: @four_word_story_example, value: params[:pitch] || '' %>
           <% end %>
 
           <%= form_group @product, :description, class: 'mb3' do %>
             <%= f.label :description, 'Blurb', class: 'control-label' %>
             <p class="h6 gray-2">How did you come up with the idea? What makes it great? Describe your vision, the problem it's solving and your advantage over the competition.</p>
-            <%= f.text_area :description, class: 'form-control',  value: params[:blurb] || '', rows: 8 %>
+            <%= f.text_area :description, class: 'field-light',  value: params[:blurb] || '', rows: 8 %>
           <% end %>
           <% if params[:idea_id] %>
             <h5>Reward early supporters</h5>

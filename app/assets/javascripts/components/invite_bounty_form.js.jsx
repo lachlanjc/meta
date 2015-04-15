@@ -38,12 +38,12 @@ var FormGroup = require('./form_group.js.jsx');
           <div className="p3">
             <FormGroup error={this.state.errors.username_or_email}>
               <label className="control-label">Assembly Username or email address</label>
-              <TypeaheadUserInput name="invite[username_or_email]" type="text" placeholder="friend@example.com" className="form-control" onTextChange={this.handleInviteeChange} />
+              <TypeaheadUserInput name="invite[username_or_email]" type="text" placeholder="friend@example.com" className="field-light" onTextChange={this.handleInviteeChange} />
             </FormGroup>
 
             <FormGroup error={this.state.errors.note}>
               <label>Personal note</label>
-              <textarea name="invite[note]" placeholder={this.props.notePlaceholder} className="form-control" />
+              <textarea name="invite[note]" placeholder={this.props.notePlaceholder} className="field-light" />
             </FormGroup>
 
             <FormGroup error={this.state.errors.tip_cents}>

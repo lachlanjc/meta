@@ -208,7 +208,7 @@ const SignupForm = React.createClass({
         {this.renderError('email')}
         <label className="control-label">Email</label>
         <input type="text"
-            className="form-control input-lg mr1"
+            className="field-light input-lg mr1"
             placeholder="jane@example.com"
             name="email"
             onKeyPress={this.handleKeyPress}
@@ -227,7 +227,7 @@ const SignupForm = React.createClass({
         <label className="control-label">Password</label>
         <input type="password"
             autoComplete={false}
-            className="form-control input-lg mr1"
+            className="field-light input-lg mr1"
             name="password"
             onKeyPress={this.handleKeyPress}
             value={password}
@@ -247,7 +247,7 @@ const SignupForm = React.createClass({
         {this.renderError('username')}
         <label className="control-label">{label}</label>
         <input type="text"
-            className="form-control input-lg mr1"
+            className="field-light input-lg mr1"
             placeholder="jane"
             name="username"
             onKeyPress={this.handleKeyPress}

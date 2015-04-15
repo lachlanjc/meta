@@ -105,7 +105,7 @@ var NewComment = React.createClass({
     var textareaClasses = React.addons.classSet({
       'bg-gray-4': this.state.dragging,
       'full-width': true,
-      'form-control': true,
+      'field-light': true,
       '_border-rad0_5': true,
       'h5 mt0 mb2': true
     });

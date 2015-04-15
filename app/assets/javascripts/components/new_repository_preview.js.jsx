@@ -123,7 +123,7 @@
             </div>
             <div className="input-group" style={{ width: '70%' }}>
               <input type="text"
-                     className="form-control"
+                     className="field-light"
                      value={this.state.inputPreview}
                      placeholder={this.props.placeholder}
                      onChange={this.onChange} />
