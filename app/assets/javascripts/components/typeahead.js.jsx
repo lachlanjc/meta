@@ -12,7 +12,7 @@ var Typeahead = React.createClass({
   render: function() {
     return (
       <div role="form" className="form-inline">
-        <div className="form-group">
+        <div className="mb2">
           <label className="sr-only">{this.props.label}</label>
           <input type="text"
                  className={"field-light input-" + this.size()}

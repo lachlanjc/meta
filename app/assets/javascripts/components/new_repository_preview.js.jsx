@@ -116,18 +116,16 @@
           </div>
 
           <FormGroup>
-            <div className="form-group gray-2 mb0">
-              <label>
-                {this.props.addonText + this.state.inputPreview}
-              </label>
-            </div>
-            <div className="input-group" style={{ width: '70%' }}>
+            <label className="gray-2">
+              {this.props.addonText + this.state.inputPreview}
+            </label>
+            <div className="col-8">
               <input type="text"
                      className="field-light"
                      value={this.state.inputPreview}
                      placeholder={this.props.placeholder}
                      onChange={this.onChange} />
-              <div className="inline-block ">
+              <div className="inline-block">
                 <a className="inline-block ml1 button button-primary"
                    disabled={this.buttonState()}
                    onClick={this.createEmptyRepo}>

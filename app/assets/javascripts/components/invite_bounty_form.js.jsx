@@ -37,7 +37,7 @@ var FormGroup = require('./form_group.js.jsx');
 
           <div className="p3">
             <FormGroup error={this.state.errors.username_or_email}>
-              <label className="control-label">Assembly Username or email address</label>
+              <label className="form-label">Assembly Username or email address</label>
               <TypeaheadUserInput name="invite[username_or_email]" type="text" placeholder="friend@example.com" className="field-light" onTextChange={this.handleInviteeChange} />
             </FormGroup>
 
@@ -48,7 +48,7 @@ var FormGroup = require('./form_group.js.jsx');
 
             <FormGroup error={this.state.errors.tip_cents}>
               <label>Leave a tip</label>
-              <p className="help-block">Start off on the right foot; generosity always pays off.</p>
+              <p className="gray-2 h5 py1 mb1 block">Start off on the right foot; generosity always pays off.</p>
 
               <div className="btn-group center" data-toggle="buttons" style={{width:'100%'}}>
                 <label className="btn btn-default rounded-left active" style={{width:'34%'}}>

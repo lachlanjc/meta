@@ -72,11 +72,11 @@ var NewDomainTransfer = React.createClass({
               </p>
 
               <FormGroup error={this.state.errors.name}>
-                <label className="control-label">Domain name</label>
+                <label className="form-label">Domain name</label>
                 <input name="domain[name]" type="text" className="field-light" placeholder="example.com" autofocus />
               </FormGroup>
               <FormGroup error={this.state.errors.transfer_auth_code}>
-                <label className="control-label">Transfer Authorization Code</label>
+                <label className="form-label">Transfer Authorization Code</label>
                 <input name="domain[transfer_auth_code]" type="text" className="field-light" />
               </FormGroup>
             </div>
@@ -118,7 +118,7 @@ var DomainPurchaseApplication = React.createClass({
               <p>Please make sure your domain is available (you can use <a href="https://domai.nr/" target="_blank">https://domai.nr/</a> to check).</p>
 
               <FormGroup error={this.state.errors.name}>
-                <label className="control-label">Domain name</label>
+                <label className="form-label">Domain name</label>
                 <input name="domain[name]" type="text" className="field-light" placeholder="example.com" autofocus />
               </FormGroup>
             </div>

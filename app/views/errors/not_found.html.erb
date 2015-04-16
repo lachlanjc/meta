@@ -20,7 +20,7 @@
         <div class="modal-body">
           <h3 <% if [3,5].include?(@background) %>style="color:#eee;"<% end %>>We still haven't found what you're looking for</h3>
           <form action="<%= discover_path %>">
-            <div class="form-group has-feedback">
+            <div class="mb2 has-feedback">
               <div class="input-group-search">
                 <input type="search" name="search" value="<%= params[:search] %>" placeholder="Search" class="field-light" autocomplete="off">
               </div>

@@ -44,18 +44,18 @@
         <form role="form" method="post" action="<%= product_contracts_path(@product) %>">
           <div class="modal-body">
             <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
-            <div class="form-group">
+            <div class="mb2">
               <!-- Person Picker -->
               <label class="input-label">Holder</label>
               <input value="@" name="contract[user]" type="text" class="field-light textcomplete" data-product-id="<%= @product.slug %>">
             </div>
 
-            <div class="form-group">
+            <div class="mb2">
               <label class="input-label">Type</label>
               <input type="text" class="field-light" value="Automatic tip when new coins minted">
             </div>
 
-            <div class="form-group">
+            <div class="mb2">
               <label class="input-label">Amount</label>
               <div data-react-class="ContractInput"
                    data-react-props="<%= {

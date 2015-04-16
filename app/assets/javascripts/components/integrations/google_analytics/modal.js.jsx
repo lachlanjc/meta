@@ -89,7 +89,7 @@
               </FormGroup>
             </div>
 
-            <div className="modal-footer form-actions">
+            <div className="modal-footer py1 border-top right-align">
               <button type="button" className="button button-default" data-dismiss="modal">Cancel</button>
               <button className="button button-primary" name="button" type="submit">Save</button>
             </div>

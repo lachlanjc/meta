@@ -158,15 +158,15 @@ var ProposalCreation = React.createClass({
       <div>
         <form>
           <fieldset>
-            <div className="form-group form-group-lg">
-              <label className="control-label">
+            <div className="mb2 mb2-lg">
+              <label className="form-label">
                 Proposal Name
               </label>
               <div><input className="field-light" type="text" onChange={this.handleTextChange('name')}></input></div>
             </div>
 
-            <div className="form-group">
-              <label className="control-label">
+            <div className="mb2">
+              <label className="form-label">
                 Proposal Description
               </label>
               {this.renderDescriptionBox()}
@@ -198,7 +198,7 @@ var ProposalCreation = React.createClass({
         <div>
           <div className="clearfix">
             <div className="col col-5 mt2">
-              <label className="control-label">
+              <label className="form-label">
                 Recipient Username
               </label>
             </div>
@@ -209,7 +209,7 @@ var ProposalCreation = React.createClass({
 
           <div className="clearfix mt3">
             <div className="col-5 col mt1">
-              <label className="control-label">
+              <label className="form-label">
                 Coins to Award
               </label>
             </div>
@@ -220,7 +220,7 @@ var ProposalCreation = React.createClass({
 
         <div className="clearfix mt3">
           <div className="col col-5 mt1">
-              <label className="control-label">
+              <label className="form-label">
                 Payment Date
               </label>
           </div>

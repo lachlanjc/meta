@@ -11,7 +11,7 @@ var TextInput = React.createClass({
   },
   render: function() {
     return (
-      <div className="form-group">
+      <div className="mb2">
         <label htmlFor="productName">1. Enter the name of your product</label>
         <input type="text" className="field-light" placeholder="Product name" onChange={this.handleChange} />
       </div>
@@ -49,7 +49,7 @@ var SwagType = React.createClass({
               <img width={this.state.item.width || "40px"} src={this.state.item.imageURL || defaultImage} />
             </div>
           <div className="caption">
-            <p className="help-block">{this.state.item.desc}</p>
+            <p className="gray-2 h5 py1 mb1 block">{this.state.item.desc}</p>
           </div>
         </div>
       </div>
@@ -95,7 +95,7 @@ var SwagTypeSelector = React.createClass({
 
     return (
       <div>
-        <div className="form-group">
+        <div className="mb2">
           <label forHtml="swagTypes">2. Select a badge type</label>
         </div>
         {rows}
@@ -185,7 +185,7 @@ var CodeBox = React.createClass({
     var codeString = this.codeString()
     return (
       <div>
-        <div className="form-group">
+        <div className="mb2">
           <label htmlFor="codeBox">3. Copy and paste your code snippet into your project</label>
           <textarea type="textarea" className="field-light flair" onFocusCapture={this.handleFocus} onMouseUpCapture={this.handleMouseUp} readOnly value={codeString} rows="4"></textarea>
         </div>

@@ -12,9 +12,9 @@ $(document).ready ->
 
   updateFormValidationState = ($form)->
     if _.contains(_.values(formValidationRules($form)), false)
-      $('button.form-actions,.form-actions button', $form).attr('disabled', 'disabled')
+      $('button.py1 border-top right-align,.py1 border-top right-align button', $form).attr('disabled', 'disabled')
     else
-      $('button.form-actions,.form-actions button', $form).removeAttr('disabled')
+      $('button.py1 border-top right-align,.py1 border-top right-align button', $form).removeAttr('disabled')
 
   # click required
   validateClickRequired = (el)->

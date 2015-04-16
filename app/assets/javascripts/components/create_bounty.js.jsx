@@ -1,4 +1,5 @@
-var Lightbox = require('./lightbox.js.jsx')
+var Lightbox = require('./lightbox.js.jsx');
+var FormGroup = require('./form_group.js.jsx');
 var NewComment = require('./news_feed/new_comment.js.jsx');
 var qs = require('qs');
 var url = require('url');
@@ -58,7 +59,7 @@ var CreateBounty = React.createClass({
               <select type="hidden" id="tag-list-hack" name="task[tag_list][]" multiple="true"></select>
             </div>
 
-            <div className="form-group">
+            <FormGroup>
               <label className="form-label">Title</label>
               <TypeaheadUserInput autofocus="autofocus"
                      defaultValue={this.props.title}
@@ -69,10 +70,10 @@ var CreateBounty = React.createClass({
                      type="text"
                      required="true"
                      onTextChange={this.handleChange} />
-            </div>
+            </FormGroup>
 
-            <div className="form-group">
-              <label className="control-label">
+            <FormGroup>
+              <label className="form-label">
                 Description
               </label>
               <NewComment
@@ -82,11 +83,11 @@ var CreateBounty = React.createClass({
                   user={UserStore.getUser()}
                   initialRows={4}
                   hideAvatar={true} />
-            </div>
+            </FormGroup>
 
-            <div className="form-group mb2">
+            <FormGroup>
               {this.renderBountyOffer()}
-            </div>
+            </FormGroup>
 
             <h6>Tags</h6>
             <TagList destination={true} newBounty={true} tags={this.prefilledTags()} />
@@ -97,7 +98,7 @@ var CreateBounty = React.createClass({
             <TagList tags={window.app.suggestedTags()} destination={false} />
 
           </div>
-          <div className="modal-footer form-actions">
+          <div className="modal-footer py1 border-top right-align">
             <button type="button" className="button button-default" data-dismiss="modal">Cancel</button>
             <button className="button button-primary" name="button" type="submit">Create bounty</button>
           </div>

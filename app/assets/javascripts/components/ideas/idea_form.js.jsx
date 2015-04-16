@@ -100,8 +100,8 @@ let NewIdeaForm = React.createClass({
 
     return (
       <form>
-        <div className="form-group mb3">
-          <label className="control-label">What's the quick pitch?</label>
+        <div className="mb3">
+          <label className="form-label">What's the quick pitch?</label>
 
           <p className="mb2 h6 gray-2">If you had 5 words to describe your product to a friend, what would you say? Small words are best and small words when old are best of all.</p>
           <CharacterLimitedInput limit={60}
@@ -110,8 +110,8 @@ let NewIdeaForm = React.createClass({
               size="large" />
         </div>
 
-        <div className="form-group mb3">
-          <label className="control-label">How would it work?</label>
+        <div className="mb3">
+          <label className="form-label">How would it work?</label>
           <p className="mb2 h6 gray-2">
             How did you come up with the idea? What does it do? What makes it great? Describe your vision and the problem it's solving.
           </p>

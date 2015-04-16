@@ -26,12 +26,12 @@
 
     render: function() {
       return (
-        <div className="form-group">
+        <div className="mb2">
           <div className="btn-group right">
             <a onClick={this.handleToggleClick} href="#">{this.state.toggle == 'simple' ? 'Custom' : 'Simple'}</a>
           </div>
 
-          <label className="control-label">
+          <label className="form-label">
             Value
           </label>
 

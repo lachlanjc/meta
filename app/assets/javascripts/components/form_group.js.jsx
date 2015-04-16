@@ -11,7 +11,7 @@ var FormGroup = React.createClass({
 
   render: function() {
     var classes = React.addons.classSet({
-      'form-group': true,
+      'mb2': true,
       'has-error': this.props.error,
       'has-feedback': this.props.error
     })
@@ -25,11 +25,11 @@ var FormGroup = React.createClass({
   },
 
   errorGlyph: function() {
-    return <span className="glyphicon glyphicon-remove form-control-feedback"></span>
+    return <Icon icon="times-circle" extraClasses="red" />
   },
 
   errorMessage: function() {
-    return <span className="help-block">{this.props.error}</span>
+    return <span className="red h5 py1 mb1 block">{this.props.error}</span>
   }
 });
 

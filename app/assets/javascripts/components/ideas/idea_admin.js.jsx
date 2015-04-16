@@ -154,7 +154,7 @@ const IdeaAdmin = React.createClass({
 
     return this.state.availableCategories.map((category) => {
       return (
-        <div className="form-group gray-1 mb0">
+        <div className="gray-1 mb0">
           <label>
             <input type="checkbox"
               checked={ideaCategories.indexOf(category.slug) > -1}
@@ -166,12 +166,11 @@ const IdeaAdmin = React.createClass({
     });
   },
 
-
   renderFlag() {
     let idea = this.state.idea;
 
     return (
-      <div className="form-group left">
+      <div className="mb2 left">
         <Button type="default" action={this.handleFlagClick}>
           {idea.flagged_at ? 'Unflag' : 'Flag'}
         </Button>
@@ -183,7 +182,7 @@ const IdeaAdmin = React.createClass({
     let idea = this.state.idea;
 
     return (
-      <div className="form-group right">
+      <div className="mb2 right">
         <a href={idea.path}>
           <Button type="primary" action={function() {}}>
             Save
@@ -199,8 +198,8 @@ const IdeaAdmin = React.createClass({
 
     return this.state.availableTopics.map((topic) => {
       return (
-        <div className="form-group gray-1 mb0">
-          <label>
+        <div className="gray-1 mb0">
+          <label className="gray-1 mb0">
             <input type="radio"
                 checked={ideaTopics.indexOf(topic.slug) > -1}
                 onChange={this.handleTopicSelected.bind(this, topic.slug)} />

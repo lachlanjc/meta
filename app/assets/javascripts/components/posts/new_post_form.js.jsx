@@ -62,7 +62,7 @@ let NewPostForm = React.createClass({
 
         <div className="px2">
           <FormGroup error={this.state.error}>
-            <label className="control-label">Title</label>
+            <label className="form-label">Title</label>
             <input className="field-light"
                 type="text"
                 name="post[title]"
@@ -72,7 +72,7 @@ let NewPostForm = React.createClass({
           </FormGroup>
 
           <FormGroup error={this.state.error}>
-            <label className="control-label">Body</label>
+            <label className="form-label">Body</label>
             <MarkdownEditor name="post[body]" id="post_body" />
           </FormGroup>
 
@@ -84,7 +84,7 @@ let NewPostForm = React.createClass({
           <h6>Suggested tags</h6>
           <TagList tags={window.app.suggestedTags()} destination={false} />
 
-          <div className="form-actions">
+          <div className="py1 border-top right-align">
             <div className="btn-group">
               {this.renderPreviewButton()}
               <input type="submit" className="button button-primary" value="Submit" />

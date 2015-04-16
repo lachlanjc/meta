@@ -204,11 +204,11 @@ const SignupForm = React.createClass({
     let { email } = this.state;
 
     return (
-      <div className="form-group">
+      <div className="mb2">
         {this.renderError('email')}
-        <label className="control-label">Email</label>
+        <label className="form-label">Email</label>
         <input type="text"
-            className="field-light input-lg mr1"
+            className="field-light lg-field mr1"
             placeholder="jane@example.com"
             name="email"
             onKeyPress={this.handleKeyPress}
@@ -222,17 +222,17 @@ const SignupForm = React.createClass({
     let { password } = this.state;
 
     return (
-      <div className="form-group">
+      <div className="mb2">
         {this.renderError('password')}
-        <label className="control-label">Password</label>
+        <label className="form-label">Password</label>
         <input type="password"
             autoComplete={false}
-            className="field-light input-lg mr1"
+            className="field-light lg-field mr1"
             name="password"
             onKeyPress={this.handleKeyPress}
             value={password}
             onChange={this.handleChange('password')} />
-        <p className="help-block">
+        <p className="gray-2 h5 py1 mb1 block">
           8 characters minimum.
         </p>
       </div>
@@ -243,11 +243,11 @@ const SignupForm = React.createClass({
     let { username } = this.state;
 
     return (
-      <div className="form-group">
+      <div className="mb2">
         {this.renderError('username')}
-        <label className="control-label">{label}</label>
+        <label className="form-label">{label}</label>
         <input type="text"
-            className="field-light input-lg mr1"
+            className="field-light lg-field mr1"
             placeholder="jane"
             name="username"
             onKeyPress={this.handleKeyPress}

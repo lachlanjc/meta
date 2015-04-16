@@ -30,7 +30,7 @@ var PersonPicker = React.createClass({
   render: function(){
     return (
       <div style={{position: 'relative'}}>
-        <input className="field-light input-sm" type="text"
+        <input className="field-light sm-field" type="text"
                ref="usernameOrEmail"
                onChange={this.handleChange}
                onKeyDown={this.handleKey}

@@ -20,7 +20,6 @@ input[type=time],
 input[type=url],
 input[type=week] {
   box-sizing: border-box;
-  height: $form-field-height;
   padding: $form-field-padding-y $form-field-padding-x;
   vertical-align: middle;
   -webkit-appearance: none;
@@ -30,26 +29,18 @@ select {
   box-sizing: border-box;
   line-height: 1.75;
   padding: $form-field-padding-y $form-field-padding-x;
-}
-
-select:not([multiple]) {
-  height: $form-field-height;
   vertical-align: middle;
 }
 
 textarea {
   box-sizing: border-box;
   line-height: 1.75;
-  padding: $form-field-padding-y $form-field-padding-x;
+  padding: ($form-field-padding-y * 2) ($form-field-padding-y * 3);
 }
 
-.fieldset-reset {
+fieldset {
   padding: 0;
   margin-left: 0;
   margin-right: 0;
   border: 0;
-}
-
-.fieldset-reset legend {
-  padding: 0;
 }

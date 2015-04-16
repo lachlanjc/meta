@@ -5,11 +5,11 @@
   <div class="sm-col-6 mx-auto">
     <%= form_for([@asset.product, @asset], class: 'form') do |f| %>
       <%= react_component 'FormUploader', inputName: 'asset[attachment_id]' %>
-      <div class="form-group">
+      <div class="mb2">
         <%= f.label :name %>
         <%= f.text_field :name, class: 'field-light' %>
       </div>
-      <div class="form-actions">
+      <div class="py1 border-top right-align">
         <button class="button button-primary" type="submit">Upload asset</button>
       </div>
     <% end %>

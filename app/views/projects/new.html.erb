@@ -10,12 +10,12 @@
     <div class="md-col-9 sm-col-9">
       <%= form_for @wip, url: product_projects_path(@product) do |f| %>
 
-        <div class="form-group">
-          <%= f.label :title, 'Project Name', class: 'control-label' %>
+        <div class="mb2">
+          <%= f.label :title, 'Project Name', class: 'form-label' %>
           <%= f.text_field :title, autofocus: '', data: { 'validate-length' => 2 }, class: 'field-light' %>
         </div>
 
-        <div class="form-group">
+        <div class="mb2">
           <%= f.fields_for :milestone, Milestone.new do |f| %>
             <%= f.label :description, class: 'form-label' %>
             <div class="markdown-editor-control js-markdown-editor dropzone js-dropzone">
@@ -31,7 +31,7 @@
         <h6>Task list</h6>
         <%= render partial: 'task_list', object: @wip.milestone %>
 
-        <div class="form-actions">
+        <div class="py1 border-top right-align">
           <button class="button button-primary" data-disable-with="Saving...">
             Create Project
           </button>

@@ -29,41 +29,41 @@
 
       <div class="row">
         <div class="sm-col-8">
-          <div class="form-group">
+          <div class="mb2">
             <%= f.label :name, 'Name', class: 'form-label' %>
-            <%= f.text_field :name, class: 'field-light input-lg', maxlength: 255, autocomplete: 'off' %>
-            <p class="help-block">
+            <%= f.text_field :name, class: 'field-light lg-field', maxlength: 255, autocomplete: 'off' %>
+            <p class="gray-2 h5 py1 mb1 block">
               A name is important, but it can always change. If you have a codename already, use that, otherwise don't get too hung up on making it perfect.
             </p>
           </div>
 
-          <div class="form-group">
+          <div class="mb2">
             <%= f.label :pitch, 'Five word pitch', class: 'form-label' %>
             <%= f.text_field :pitch, class: 'field-light' %>
-            <p class="help-block">
+            <p class="gray-2 h5 py1 mb1 block">
               If you had 30 seconds to describe your business to a friend, what would you say? Use simple, direct words.
             </p>
           </div>
 
-          <div class="form-group">
+          <div class="mb2">
             <%= f.label :you_tube_video_url, 'Pitch video link', class: 'form-label' %>
             <%= f.url_field :you_tube_video_url, class: 'field-light', maxlength: 255 %>
-            <p class="help-block">
+            <p class="gray-2 h5 py1 mb1 block">
               Add a link to a video that describes your product. It could be as simple as you talking into a webcam, or
               as awesome as an animated product video.
             </p>
           </div>
 
-          <div class="form-group">
+          <div class="mb2">
             <%= f.label :homepage_url, 'Product Display URL', class: 'form-label' %>
             <%= f.url_field :homepage_url, class: 'field-light', placeholder: "eg: https://#{@product.slug}.com", maxlength: 255 %>
           </div>
 
           <% if signed_in? && current_user.staff? %>
-            <div class="form-group">
+            <div class="mb2">
               <%= f.label :try_url, 'Product Try URL', class: 'form-label' %>
               <%= f.url_field :try_url, class: 'field-light', placeholder: "eg: https://#{@product.slug}.com?utm=assembly", maxlength: 255 %>
-              <p class="help-block">
+              <p class="gray-2 h5 py1 mb1 block">
                 Once you've added this link your product will show up as Live.
               </p>
             </div>
@@ -73,7 +73,7 @@
         </div>
 
         <div class="sm-col-4">
-          <div class="form-group">
+          <div class="mb2">
             <label class="form-label">Logo image</label>
             <div class="js-dropzone"
                 style="margin-bottom:6px"
@@ -97,28 +97,28 @@
       <div class="row">
         <div class="sm-col-12">
 
-          <div class="form-group">
+          <div class="mb2">
             <%= f.label :lead, 'Blurb', class: 'form-label' %>
             <div class="row">
               <div class="md-col-8">
-                <%= f.text_area :lead, class: 'field-light input-lg', rows: 2 %>
+                <%= f.text_area :lead, class: 'field-light lg-field', rows: 2 %>
               </div>
               <div class="md-col-4">
-                <p class="help-block mt0">
+                <p class="gray-2 h5 py1 mb1 block mt0">
                   Keep it short. How would you describe your product in a tweet?
                 </p>
               </div>
             </div>
           </div>
 
-          <div class="form-group">
+          <div class="mb2">
             <%= f.label :description, 'Description', class: 'form-label' %>
             <div class="row">
               <div class="md-col-8">
                 <%= f.text_area :description, class: 'field-light', rows: 2, data: { autosize: '', 'validate-length' => 2 } %>
               </div>
               <div class="md-col-4">
-                <p class="help-block mt0">
+                <p class="gray-2 h5 py1 mb1 block mt0">
                   Dive into the details. How did you come up with the idea? What makes it great?
                 </p>
               </div>
@@ -128,7 +128,7 @@
         </div>
       </div>
 
-      <div class="form-actions">
+      <div class="py1 border-top right-align">
         <%= f.submit 'Save', class: 'button button-primary' %>
       </div>
 
@@ -138,91 +138,91 @@
   <div class="tab-pane" id="vision">
 
     <%= form_for @product do |f| %>
-      <div class="form-group">
+      <div class="mb2">
         <%= f.label :goals, 'Goals', class: 'form-label' %>
         <div class="row">
           <div class="md-col-8">
             <%= f.text_area :goals, class: 'field-light', data: { autosize: '' }, rows: 2 %>
           </div>
           <div class="md-col-4">
-            <p class="help-block mt0">
+            <p class="gray-2 h5 py1 mb1 block mt0">
               What problems are you trying to solve with the product? Setting goals early often helps align people's expectations later.
             </p>
           </div>
         </div>
       </div>
 
-      <div class="form-group">
+      <div class="mb2">
         <%= f.label :key_features, 'Key Features', class: 'form-label' %>
         <div class="row">
           <div class="md-col-8">
             <%= f.text_area :key_features, class: 'field-light', data: { autosize: '' }, rows: 2 %>
           </div>
           <div class="md-col-4">
-            <p class="mt0 help-block">
+            <p class="mt0 gray-2 h5 py1 mb1 block">
               What do you expect the key features of the product to be? What sets it apart from others?
             </p>
           </div>
         </div>
       </div>
 
-      <div class="form-group">
+      <div class="mb2">
         <%= f.label :target_audience, 'Target Audience', class: 'form-label' %>
         <div class="row">
           <div class="md-col-8">
             <%= f.text_area :target_audience, class: 'field-light', data: { autosize: '' }, rows: 2 %>
           </div>
           <div class="md-col-4">
-            <p class="mt0 help-block">
+            <p class="mt0 gray-2 h5 py1 mb1 block">
               Who are you solving problems for? What is unique about that market?
             </p>
           </div>
         </div>
       </div>
 
-      <div class="form-group">
+      <div class="mb2">
         <%= f.label :competing_products, 'Competing Products', class: 'form-label' %>
         <div class="row">
           <div class="md-col-8">
             <%= f.text_area :competing_products, class: 'field-light', data: { autosize: '' }, rows: 2 %>
           </div>
           <div class="md-col-4">
-            <p class="mt0 help-block">
+            <p class="mt0 gray-2 h5 py1 mb1 block">
               What do you consider is your biggest competition? For example, Facebook may consider MySpace their biggest competitor.
             </p>
           </div>
         </div>
       </div>
 
-      <div class="form-group">
+      <div class="mb2">
         <%= f.label :competitive_advantage, 'Competitive Advantage', class: 'form-label' %>
         <div class="row">
           <div class="md-col-8">
             <%= f.text_area :competitive_advantage, class: 'field-light', data: { autosize: '' }, rows: 2 %>
           </div>
           <div class="md-col-4">
-            <p class="mt0 help-block">
+            <p class="mt0 gray-2 h5 py1 mb1 block">
               What advantage do you have over these competitors that is uniquely yours?
             </p>
           </div>
         </div>
       </div>
 
-      <div class="form-group">
+      <div class="mb2">
         <%= f.label :monetization_strategy, 'Monetization Strategy', class: 'form-label' %>
         <div class="row">
           <div class="md-col-8">
             <%= f.text_area :monetization_strategy, class: 'field-light', data: { autosize: '' }, rows: 2 %>
           </div>
           <div class="md-col-4">
-            <p class="mt0 help-block">
+            <p class="mt0 gray-2 h5 py1 mb1 block">
               How should this product be monetized?
             </p>
           </div>
         </div>
       </div>
 
-      <div class="form-actions">
+      <div class="py1 border-top right-align">
         <%= f.submit 'Save', class: 'button button-primary' %>
       </div>
     <% end %>
@@ -256,7 +256,7 @@
         <div class="sm-col-8">
           <div class="input-group input-group-sm" style="margin-bottom: 10px;">
             <%= label_tag :core_team_member_username, '@', class: 'input-group-addon input-group-addon-sm' %>
-            <%= text_field_tag 'core_team_member[username]', nil, class: 'field-light input-sm', placeholder: 'username' %>
+            <%= text_field_tag 'core_team_member[username]', nil, class: 'field-light sm-field', placeholder: 'username' %>
           </div>
         </div>
         <div class="sm-col-4">

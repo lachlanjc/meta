@@ -45,10 +45,10 @@ var TextInput = React.createClass({
   render: function() {
     return (
       <div role="form" className="form-inline">
-        <div className={"form-group input-group-" + this.size()}>
+        <div className={"mb2 input-group-" + this.size()}>
           <label className="sr-only">{this.props.label}</label>
           <input type="text"
-                 className={"field-light input-" + this.size()}
+                 className={"field-light " + this.size() + "-field"}
                  valueLink={this.linkState('inputValue')}
                  style={{ width: this.props.width }}
                  onKeyDown={this.keyDown}

@@ -8,7 +8,7 @@ var ProductSearch = React.createClass({
 
   render: function() {
     return <div className="left-align relative">
-      <div className="form-group">
+      <div className="mb2">
 
         <input type="text" className="field-light" placeholder="Search Apps"
                name="search" valueLink={this.linkState('query')} />

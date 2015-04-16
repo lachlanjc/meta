@@ -26,7 +26,7 @@ module FormHelper
   def form_group(obj, attribute, options={}, &blk)
     error_messages = obj.errors[attribute]
     classes = (options[:class] || '').split(' ')
-    classes << 'form-group'
+    classes << 'mb2'
     classes << %w(has-error has-feedback) if error_messages.any?
 
     content_tag :div, capture(&blk), class: classes.join(' ')
